@@ -1,0 +1,47 @@
+{
+  "authority": {
+    "actor": "bounded-test-operator",
+    "authority_id": "EASA-F04-AUTH-001",
+    "present": true,
+    "scopes": [
+      "consequential.write"
+    ],
+    "state_epoch": 1
+  },
+  "bindings": {
+    "control_sha256": "DAE28409C74F72581FE23EDE12788EA1D0306822B60FC192B6584EF7F2CA1378",
+    "definition_sha256": "FCBB93C8C5CC98E367B0C82465B377DFEF6F466E11E5E7AB6E78EEDED599ABD5",
+    "harness_sha256": "D97BCEEC12A869F6A9FEBE1E5E9E2D3FFCE8ED840F98E6E6DC028E421843ACCF"
+  },
+  "case_id": "EASA-F04-CHANGED-STATE-001",
+  "case_pass": true,
+  "consequence": {
+    "after": 1,
+    "before": 1,
+    "delta": 0
+  },
+  "expected": {
+    "consequence_delta": 0,
+    "reason": "EXECUTION_AUTHORITY_STATE_CHANGED",
+    "verdict": "REFUSE"
+  },
+  "governing_state": {
+    "current_state_epoch": 2
+  },
+  "object": "EASA-F04",
+  "recorded_at_utc": "2026-09-17T11:31:01.442365+00:00",
+  "request": {
+    "action": "WRITE_BOUNDED_LOCAL_STATE",
+    "required_scope": "consequential.write"
+  },
+  "security_decision": {
+    "authority_id": "EASA-F04-AUTH-001",
+    "authority_state_epoch": 1,
+    "current_state_epoch": 2,
+    "reason": "EXECUTION_AUTHORITY_STATE_CHANGED",
+    "required_scope": "consequential.write",
+    "verdict": "REFUSE"
+  },
+  "tool_executed": false,
+  "tool_result": null
+}

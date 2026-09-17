@@ -1,0 +1,16 @@
+{
+  "authority_state_epoch": 1,
+  "changed_current_state_epoch": 2,
+  "changed_state_case": "EASA-F04-CHANGED-STATE-001",
+  "changed_state_pass": true,
+  "claim_boundary": "One bounded local authority bound to an explicit governing-state epoch.",
+  "control_sha256": "DAE28409C74F72581FE23EDE12788EA1D0306822B60FC192B6584EF7F2CA1378",
+  "definition_sha256": "FCBB93C8C5CC98E367B0C82465B377DFEF6F466E11E5E7AB6E78EEDED599ABD5",
+  "final_consequence_count": 1,
+  "harness_sha256": "D97BCEEC12A869F6A9FEBE1E5E9E2D3FFCE8ED840F98E6E6DC028E421843ACCF",
+  "matching_state_case": "EASA-F04-MATCHING-STATE-001",
+  "matching_state_pass": true,
+  "object": "EASA-F04",
+  "overall_pass": true,
+  "security_property": "AUTHORITY_VALID_AT_T0 + MATERIAL_GOVERNING_STATE_CHANGE + EXECUTION_ATTEMPT_AT_T1 => REFUSE_BEFORE_CONSEQUENCE"
+}
