@@ -1,0 +1,48 @@
+{
+  "bindings": {
+    "control_sha256": "7895A642BED2C725A127BF210F8E1757786C2E992D800E9C4AD66608F2C15BCA",
+    "definition_sha256": "4DFE296B00E82EEE60287BFCE92C879B2FE58561F18454891448157D814A8B3A",
+    "harness_sha256": "8226A075DBF444D31E6F1C5D295DBA84E151FEEC328B087D6CE845939542AA47"
+  },
+  "case_id": "EASA-F05-HUMAN-ABSENT-001",
+  "case_pass": true,
+  "consequence": {
+    "after": 1,
+    "before": 1,
+    "delta": 0
+  },
+  "execution_authority": {
+    "actor": "bounded-test-agent",
+    "authority_id": "EASA-F05-MACHINE-AUTH-001",
+    "present": true,
+    "scopes": [
+      "high_impact.write"
+    ]
+  },
+  "expected": {
+    "consequence_delta": 0,
+    "reason": "REQUIRED_HUMAN_AUTHORITY_ABSENT",
+    "verdict": "REFUSE"
+  },
+  "human_authority": {
+    "authority_id": null,
+    "present": false,
+    "required": true
+  },
+  "object": "EASA-F05",
+  "recorded_at_utc": "2026-09-17T11:43:50.156767+00:00",
+  "request": {
+    "action": "HIGH_IMPACT_WRITE",
+    "required_scope": "high_impact.write"
+  },
+  "security_decision": {
+    "action": "HIGH_IMPACT_WRITE",
+    "execution_authority_id": "EASA-F05-MACHINE-AUTH-001",
+    "human_authority_id": null,
+    "reason": "REQUIRED_HUMAN_AUTHORITY_ABSENT",
+    "required_scope": "high_impact.write",
+    "verdict": "REFUSE"
+  },
+  "tool_executed": false,
+  "tool_result": null
+}

@@ -1,0 +1,14 @@
+{
+  "claim_boundary": "One bounded local high-impact action with an explicit required-human-authority condition.",
+  "control_sha256": "7895A642BED2C725A127BF210F8E1757786C2E992D800E9C4AD66608F2C15BCA",
+  "definition_sha256": "4DFE296B00E82EEE60287BFCE92C879B2FE58561F18454891448157D814A8B3A",
+  "final_consequence_count": 1,
+  "harness_sha256": "8226A075DBF444D31E6F1C5D295DBA84E151FEEC328B087D6CE845939542AA47",
+  "negative_case": "EASA-F05-HUMAN-ABSENT-001",
+  "negative_pass": true,
+  "object": "EASA-F05",
+  "overall_pass": true,
+  "positive_case": "EASA-F05-HUMAN-PRESENT-001",
+  "positive_pass": true,
+  "security_property": "HIGH_IMPACT_ACTION + REQUIRED_HUMAN_AUTHORITY_ABSENT => REFUSE_BEFORE_CONSEQUENCE"
+}
