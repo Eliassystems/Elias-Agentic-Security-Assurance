@@ -1,0 +1,14 @@
+{
+  "claim_boundary": "Single-use authority for one bounded local consequential action.",
+  "control_sha256": "7985D4DB935FD15D46DB54BD77387D43891981029539C22A9637D444AC0E780C",
+  "definition_sha256": "496E308CC5BECBC6A6E56B6CA386B40561AD1FF5724D774EC49F1C8D5E66BAA7",
+  "final_consequence_count": 1,
+  "first_use_case": "EASA-F03-FIRST-USE-001",
+  "first_use_pass": true,
+  "harness_sha256": "7ABE2A738F0F31AD36E1ED0AC9516CD75B8205B1767E5AB1C37700787EFBD272",
+  "object": "EASA-F03",
+  "overall_pass": true,
+  "replay_case": "EASA-F03-REPLAY-001",
+  "replay_pass": true,
+  "security_property": "AUTHORITY_ALREADY_CONSUMED + REPLAY_ATTEMPT => NO_CONSEQUENCE"
+}
