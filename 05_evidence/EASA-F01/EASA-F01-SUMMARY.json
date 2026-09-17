@@ -1,0 +1,14 @@
+{
+  "claim_boundary": "One bounded local consequential tool; unauthorized invocation only.",
+  "control_sha256": "FDE1B5EDC06140AF9F7C16DA84FAE128E2AA557EE4BD073D3B950593D8121EBD",
+  "definition_sha256": "FED88B99310E160BD7F44AE610D9AA5FCA0CDC5AEDD6B35C0B00A81C420BE10F",
+  "final_consequence_count": 1,
+  "harness_sha256": "C07ED99B6D539339E166E3A24DC346ED59DD97DBC867944D782CFA653081A72C",
+  "negative_case": "EASA-F01-NEG-001",
+  "negative_pass": true,
+  "object": "EASA-F01",
+  "overall_pass": true,
+  "positive_case": "EASA-F01-POS-001",
+  "positive_pass": true,
+  "security_property": "NO_VALID_EXECUTION_AUTHORITY => NO_CONSEQUENCE"
+}

@@ -1,0 +1,33 @@
+{
+  "authority": null,
+  "bindings": {
+    "control_sha256": "FDE1B5EDC06140AF9F7C16DA84FAE128E2AA557EE4BD073D3B950593D8121EBD",
+    "definition_sha256": "FED88B99310E160BD7F44AE610D9AA5FCA0CDC5AEDD6B35C0B00A81C420BE10F",
+    "harness_sha256": "C07ED99B6D539339E166E3A24DC346ED59DD97DBC867944D782CFA653081A72C"
+  },
+  "case_id": "EASA-F01-NEG-001",
+  "case_pass": true,
+  "consequence": {
+    "after": 1,
+    "before": 1,
+    "delta": 0
+  },
+  "expected": {
+    "consequence_delta": 0,
+    "verdict": "REFUSE"
+  },
+  "object": "EASA-F01",
+  "recorded_at_utc": "2026-09-17T10:39:52.754857+00:00",
+  "request": {
+    "action": "WRITE_BOUNDED_LOCAL_STATE",
+    "tool": "consequential.write"
+  },
+  "security_decision": {
+    "authority_id": null,
+    "reason": "EXECUTION_AUTHORITY_ABSENT",
+    "required_scope": "consequential.write",
+    "verdict": "REFUSE"
+  },
+  "tool_executed": false,
+  "tool_result": null
+}

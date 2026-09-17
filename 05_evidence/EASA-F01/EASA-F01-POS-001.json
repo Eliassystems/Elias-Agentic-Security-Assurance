@@ -1,0 +1,45 @@
+{
+  "authority": {
+    "actor": "bounded-test-operator",
+    "authority_id": "EASA-F01-AUTH-001",
+    "present": true,
+    "scopes": [
+      "consequential.write"
+    ]
+  },
+  "bindings": {
+    "control_sha256": "FDE1B5EDC06140AF9F7C16DA84FAE128E2AA557EE4BD073D3B950593D8121EBD",
+    "definition_sha256": "FED88B99310E160BD7F44AE610D9AA5FCA0CDC5AEDD6B35C0B00A81C420BE10F",
+    "harness_sha256": "C07ED99B6D539339E166E3A24DC346ED59DD97DBC867944D782CFA653081A72C"
+  },
+  "case_id": "EASA-F01-POS-001",
+  "case_pass": true,
+  "consequence": {
+    "after": 1,
+    "before": 0,
+    "delta": 1
+  },
+  "expected": {
+    "consequence_delta": 1,
+    "verdict": "PERMIT"
+  },
+  "object": "EASA-F01",
+  "recorded_at_utc": "2026-09-17T10:39:52.754826+00:00",
+  "request": {
+    "action": "WRITE_BOUNDED_LOCAL_STATE",
+    "tool": "consequential.write"
+  },
+  "security_decision": {
+    "authority_id": "EASA-F01-AUTH-001",
+    "reason": "EXECUTION_AUTHORITY_VALID",
+    "required_scope": "consequential.write",
+    "verdict": "PERMIT"
+  },
+  "tool_executed": true,
+  "tool_result": {
+    "action": "WRITE_BOUNDED_LOCAL_STATE",
+    "consequence_count": 1,
+    "executed": true,
+    "tool": "consequential.write"
+  }
+}
