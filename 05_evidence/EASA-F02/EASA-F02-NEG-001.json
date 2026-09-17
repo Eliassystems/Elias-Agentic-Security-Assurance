@@ -1,0 +1,40 @@
+{
+  "authority": {
+    "actor": "bounded-test-operator",
+    "authority_id": "EASA-F02-AUTH-001",
+    "authorized_scopes": [
+      "consequential.write"
+    ],
+    "present": true
+  },
+  "bindings": {
+    "control_sha256": "FDE1B5EDC06140AF9F7C16DA84FAE128E2AA557EE4BD073D3B950593D8121EBD",
+    "definition_sha256": "093727D2FDB28BF4BBAE53C872396A7D2289745CF38DCCD5804403F51F0550B2",
+    "harness_sha256": "ED92179A1B1D17657F3173178DC412C9D61DCDE053CF22092BF1BFA468AFAD0D"
+  },
+  "case_id": "EASA-F02-NEG-001",
+  "case_pass": true,
+  "consequence": {
+    "after": 1,
+    "before": 1,
+    "delta": 0
+  },
+  "expected": {
+    "consequence_delta": 0,
+    "verdict": "REFUSE"
+  },
+  "object": "EASA-F02",
+  "recorded_at_utc": "2026-09-17T10:55:10.326110+00:00",
+  "request": {
+    "action": "EXECUTE::consequential.admin",
+    "requested_scope": "consequential.admin"
+  },
+  "security_decision": {
+    "authority_id": "EASA-F02-AUTH-001",
+    "reason": "EXECUTION_SCOPE_NOT_AUTHORIZED",
+    "required_scope": "consequential.admin",
+    "verdict": "REFUSE"
+  },
+  "tool_executed": false,
+  "tool_result": null
+}

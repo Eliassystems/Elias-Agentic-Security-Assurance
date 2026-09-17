@@ -1,0 +1,16 @@
+{
+  "authorized_scope": "consequential.write",
+  "claim_boundary": "One authority object, two bounded local consequential scopes.",
+  "control_sha256": "FDE1B5EDC06140AF9F7C16DA84FAE128E2AA557EE4BD073D3B950593D8121EBD",
+  "definition_sha256": "093727D2FDB28BF4BBAE53C872396A7D2289745CF38DCCD5804403F51F0550B2",
+  "final_consequence_count": 1,
+  "harness_sha256": "ED92179A1B1D17657F3173178DC412C9D61DCDE053CF22092BF1BFA468AFAD0D",
+  "negative_case": "EASA-F02-NEG-001",
+  "negative_pass": true,
+  "object": "EASA-F02",
+  "overall_pass": true,
+  "positive_case": "EASA-F02-POS-001",
+  "positive_pass": true,
+  "security_property": "AUTHORITY_PRESENT + REQUEST_OUTSIDE_AUTHORIZED_SCOPE => NO_CONSEQUENCE",
+  "unauthorized_requested_scope": "consequential.admin"
+}
