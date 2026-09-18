@@ -1,0 +1,82 @@
+{
+  "child_authority": {
+    "authority_epoch": 1,
+    "authority_id": "AUTH_F11_B",
+    "authorized_actions": [
+      "F11_STANDARD_WRITE"
+    ],
+    "authorized_tools": [
+      "TOOL_F11_STANDARD"
+    ],
+    "delegation_depth_remaining": 1,
+    "lineage_consequence_ceiling": 4,
+    "lineage_consequence_count": 0,
+    "lineage_id": "LINEAGE_F11_001",
+    "local_consequence_ceiling": 2,
+    "local_consequence_count": 0,
+    "parent_authority_id": "AUTH_F11_A_ROOT",
+    "subject_identity": "AGENT_B",
+    "valid": true
+  },
+  "decision": {
+    "child_authority_issued": true,
+    "parent_authority_id": "AUTH_F11_A_ROOT",
+    "reason": "DELEGATION_AUTHORIZED",
+    "requested_actions": [
+      "F11_STANDARD_WRITE"
+    ],
+    "requested_child_authority_id": "AUTH_F11_B",
+    "requested_child_subject": "AGENT_B",
+    "requested_delegation_depth": 1,
+    "requested_local_consequence_ceiling": 2,
+    "requested_tools": [
+      "TOOL_F11_STANDARD"
+    ],
+    "verdict": "PERMIT"
+  },
+  "observation_time_utc": "2026-09-18T11:13:15.441126+00:00",
+  "parent_after": {
+    "authority_epoch": 1,
+    "authority_id": "AUTH_F11_A_ROOT",
+    "authorized_actions": [
+      "F11_ADMIN_WRITE",
+      "F11_STANDARD_WRITE"
+    ],
+    "authorized_tools": [
+      "TOOL_F11_HIGH",
+      "TOOL_F11_STANDARD"
+    ],
+    "delegation_depth_remaining": 2,
+    "lineage_consequence_ceiling": 4,
+    "lineage_consequence_count": 0,
+    "lineage_id": "LINEAGE_F11_001",
+    "local_consequence_ceiling": 4,
+    "local_consequence_count": 0,
+    "parent_authority_id": null,
+    "subject_identity": "AGENT_A",
+    "valid": true
+  },
+  "parent_before": {
+    "authority_epoch": 1,
+    "authority_id": "AUTH_F11_A_ROOT",
+    "authorized_actions": [
+      "F11_ADMIN_WRITE",
+      "F11_STANDARD_WRITE"
+    ],
+    "authorized_tools": [
+      "TOOL_F11_HIGH",
+      "TOOL_F11_STANDARD"
+    ],
+    "delegation_depth_remaining": 2,
+    "lineage_consequence_ceiling": 4,
+    "lineage_consequence_count": 0,
+    "lineage_id": "LINEAGE_F11_001",
+    "local_consequence_ceiling": 4,
+    "local_consequence_count": 0,
+    "parent_authority_id": null,
+    "subject_identity": "AGENT_A",
+    "valid": true
+  },
+  "parent_unchanged": true,
+  "test_id": "EASA-F11-DELEGATION-A-B"
+}

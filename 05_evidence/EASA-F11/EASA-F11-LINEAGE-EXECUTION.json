@@ -1,0 +1,182 @@
+{
+  "examination": "EASA-F11",
+  "execution_results": [
+    {
+      "action": "F11_STANDARD_WRITE",
+      "authority_id": "AUTH_F11_C",
+      "consequence_after": 1,
+      "consequence_before": 0,
+      "consequence_delta": 1,
+      "lineage_ceiling": 4,
+      "lineage_count_after": 1,
+      "lineage_count_before": 0,
+      "lineage_id": "LINEAGE_F11_001",
+      "local_ceiling": 1,
+      "local_count_after": 1,
+      "local_count_before": 0,
+      "observation_time_utc": "2026-09-18T11:13:15.441126+00:00",
+      "presenter_identity": "AGENT_C",
+      "reason": "AUTHORIZED",
+      "target_tool_identity": "TOOL_F11_STANDARD",
+      "test_id": "EASA-F11-EXEC-C-001",
+      "verdict": "PERMIT"
+    },
+    {
+      "action": "F11_STANDARD_WRITE",
+      "authority_id": "AUTH_F11_B",
+      "consequence_after": 2,
+      "consequence_before": 1,
+      "consequence_delta": 1,
+      "lineage_ceiling": 4,
+      "lineage_count_after": 2,
+      "lineage_count_before": 1,
+      "lineage_id": "LINEAGE_F11_001",
+      "local_ceiling": 2,
+      "local_count_after": 1,
+      "local_count_before": 0,
+      "observation_time_utc": "2026-09-18T11:13:15.441126+00:00",
+      "presenter_identity": "AGENT_B",
+      "reason": "AUTHORIZED",
+      "target_tool_identity": "TOOL_F11_STANDARD",
+      "test_id": "EASA-F11-EXEC-B-001",
+      "verdict": "PERMIT"
+    },
+    {
+      "action": "F11_STANDARD_WRITE",
+      "authority_id": "AUTH_F11_B",
+      "consequence_after": 3,
+      "consequence_before": 2,
+      "consequence_delta": 1,
+      "lineage_ceiling": 4,
+      "lineage_count_after": 3,
+      "lineage_count_before": 2,
+      "lineage_id": "LINEAGE_F11_001",
+      "local_ceiling": 2,
+      "local_count_after": 2,
+      "local_count_before": 1,
+      "observation_time_utc": "2026-09-18T11:13:15.441126+00:00",
+      "presenter_identity": "AGENT_B",
+      "reason": "AUTHORIZED",
+      "target_tool_identity": "TOOL_F11_STANDARD",
+      "test_id": "EASA-F11-EXEC-B-002",
+      "verdict": "PERMIT"
+    },
+    {
+      "action": "F11_STANDARD_WRITE",
+      "authority_id": "AUTH_F11_A_ROOT",
+      "consequence_after": 4,
+      "consequence_before": 3,
+      "consequence_delta": 1,
+      "lineage_ceiling": 4,
+      "lineage_count_after": 4,
+      "lineage_count_before": 3,
+      "lineage_id": "LINEAGE_F11_001",
+      "local_ceiling": 4,
+      "local_count_after": 1,
+      "local_count_before": 0,
+      "observation_time_utc": "2026-09-18T11:13:15.441126+00:00",
+      "presenter_identity": "AGENT_A",
+      "reason": "AUTHORIZED",
+      "target_tool_identity": "TOOL_F11_STANDARD",
+      "test_id": "EASA-F11-EXEC-A-001",
+      "verdict": "PERMIT"
+    },
+    {
+      "action": "F11_STANDARD_WRITE",
+      "authority_id": "AUTH_F11_A_ROOT",
+      "consequence_after": 4,
+      "consequence_before": 4,
+      "consequence_delta": 0,
+      "lineage_ceiling": 4,
+      "lineage_count_after": 4,
+      "lineage_count_before": 4,
+      "lineage_id": "LINEAGE_F11_001",
+      "local_ceiling": 4,
+      "local_count_after": 1,
+      "local_count_before": 1,
+      "observation_time_utc": "2026-09-18T11:13:15.441126+00:00",
+      "presenter_identity": "AGENT_A",
+      "reason": "LINEAGE_CONSEQUENCE_CEILING_EXHAUSTED",
+      "target_tool_identity": "TOOL_F11_STANDARD",
+      "test_id": "EASA-F11-EXEC-A-LINEAGE-CEILING",
+      "verdict": "REFUSE"
+    }
+  ],
+  "final_authorities": {
+    "b": {
+      "authority_epoch": 1,
+      "authority_id": "AUTH_F11_B",
+      "authorized_actions": [
+        "F11_STANDARD_WRITE"
+      ],
+      "authorized_tools": [
+        "TOOL_F11_STANDARD"
+      ],
+      "delegation_depth_remaining": 1,
+      "lineage_consequence_ceiling": 4,
+      "lineage_consequence_count": 4,
+      "lineage_id": "LINEAGE_F11_001",
+      "local_consequence_ceiling": 2,
+      "local_consequence_count": 2,
+      "parent_authority_id": "AUTH_F11_A_ROOT",
+      "subject_identity": "AGENT_B",
+      "valid": true
+    },
+    "c": {
+      "authority_epoch": 1,
+      "authority_id": "AUTH_F11_C",
+      "authorized_actions": [
+        "F11_STANDARD_WRITE"
+      ],
+      "authorized_tools": [
+        "TOOL_F11_STANDARD"
+      ],
+      "delegation_depth_remaining": 0,
+      "lineage_consequence_ceiling": 4,
+      "lineage_consequence_count": 4,
+      "lineage_id": "LINEAGE_F11_001",
+      "local_consequence_ceiling": 1,
+      "local_consequence_count": 1,
+      "parent_authority_id": "AUTH_F11_B",
+      "subject_identity": "AGENT_C",
+      "valid": true
+    },
+    "root": {
+      "authority_epoch": 1,
+      "authority_id": "AUTH_F11_A_ROOT",
+      "authorized_actions": [
+        "F11_ADMIN_WRITE",
+        "F11_STANDARD_WRITE"
+      ],
+      "authorized_tools": [
+        "TOOL_F11_HIGH",
+        "TOOL_F11_STANDARD"
+      ],
+      "delegation_depth_remaining": 2,
+      "lineage_consequence_ceiling": 4,
+      "lineage_consequence_count": 4,
+      "lineage_id": "LINEAGE_F11_001",
+      "local_consequence_ceiling": 4,
+      "local_consequence_count": 1,
+      "parent_authority_id": null,
+      "subject_identity": "AGENT_A",
+      "valid": true
+    }
+  },
+  "final_lineage": {
+    "consequence_ceiling": 4,
+    "consequence_count": 4,
+    "lineage_id": "LINEAGE_F11_001"
+  },
+  "final_tool_counters": {
+    "high": 0,
+    "standard": 4
+  },
+  "observation_time_utc": "2026-09-18T11:13:15.441126+00:00",
+  "record_type": "LINEAGE_EXECUTION",
+  "same_lineage_runtime_object": true,
+  "tool_counters_before_execution": {
+    "high": 0,
+    "standard": 0
+  }
+}

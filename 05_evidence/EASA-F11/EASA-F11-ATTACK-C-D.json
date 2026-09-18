@@ -1,0 +1,60 @@
+{
+  "child_authority": null,
+  "decision": {
+    "child_authority_issued": false,
+    "parent_authority_id": "AUTH_F11_C",
+    "reason": "DELEGATION_AUTHORITY_NOT_PRESENT",
+    "requested_actions": [
+      "F11_STANDARD_WRITE"
+    ],
+    "requested_child_authority_id": "AUTH_F11_D",
+    "requested_child_subject": "AGENT_D",
+    "requested_delegation_depth": 0,
+    "requested_local_consequence_ceiling": 1,
+    "requested_tools": [
+      "TOOL_F11_STANDARD"
+    ],
+    "verdict": "REFUSE"
+  },
+  "observation_time_utc": "2026-09-18T11:13:15.441126+00:00",
+  "parent_after": {
+    "authority_epoch": 1,
+    "authority_id": "AUTH_F11_C",
+    "authorized_actions": [
+      "F11_STANDARD_WRITE"
+    ],
+    "authorized_tools": [
+      "TOOL_F11_STANDARD"
+    ],
+    "delegation_depth_remaining": 0,
+    "lineage_consequence_ceiling": 4,
+    "lineage_consequence_count": 0,
+    "lineage_id": "LINEAGE_F11_001",
+    "local_consequence_ceiling": 1,
+    "local_consequence_count": 0,
+    "parent_authority_id": "AUTH_F11_B",
+    "subject_identity": "AGENT_C",
+    "valid": true
+  },
+  "parent_before": {
+    "authority_epoch": 1,
+    "authority_id": "AUTH_F11_C",
+    "authorized_actions": [
+      "F11_STANDARD_WRITE"
+    ],
+    "authorized_tools": [
+      "TOOL_F11_STANDARD"
+    ],
+    "delegation_depth_remaining": 0,
+    "lineage_consequence_ceiling": 4,
+    "lineage_consequence_count": 0,
+    "lineage_id": "LINEAGE_F11_001",
+    "local_consequence_ceiling": 1,
+    "local_consequence_count": 0,
+    "parent_authority_id": "AUTH_F11_B",
+    "subject_identity": "AGENT_C",
+    "valid": true
+  },
+  "parent_unchanged": true,
+  "test_id": "EASA-F11-ATTACK-C-D"
+}
