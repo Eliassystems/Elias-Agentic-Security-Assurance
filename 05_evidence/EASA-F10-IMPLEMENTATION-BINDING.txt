@@ -1,0 +1,149 @@
+EASA-F10 IMPLEMENTATION BINDING
+
+STATUS:
+FROZEN PRE-EXECUTION IMPLEMENTATION BINDING
+
+EXAMINATION:
+EASA-F10
+
+PROPERTY:
+COMPROMISED-AGENT CONTAINMENT
+
+DEFINITION:
+02_threat_models/EASA-F10-DEFINITION.md
+SHA256: D066A7AC91DBD906B05E24683A342DB4E16BC644225633C04AA7BEB2A067EEF5
+
+CONTROL:
+03_controls/easa_f10_control.py
+SHA256: 8EF80E0F51770B21A1737B4051B3130FCFE6053817AD50FD7D6D04E00D8DE84F
+
+HARNESS:
+04_tests/easa_f10_harness.py
+SHA256: D3F06FAC6887AABA547CB4BA35D1F6B38558AE44B2FDE27C4D1E6223E63450E2
+
+F10 DEFINITION FREEZE:
+94c42ef
+
+ANTECEDENT:
+EASA-F09 PASS / CLOSED
+
+F09 DETERMINATION:
+dae1593
+
+F09 DETERMINATION SHA256:
+3B1EB6254271D2E1E5DDF280B5C8780AB91C04FAB5BFFD84AC4F1007A7D2D789
+
+EXECUTION STATE:
+NOT YET RUN
+
+HOSTILE ATTACK STATE:
+NOT YET EXECUTED
+
+PEER-INTEGRITY POSITIVE STATE:
+NOT YET EXECUTED
+
+LOW-BOUNDARY POSITIVE STATE:
+NOT YET EXECUTED
+
+FIRST OBSERVATION STATE:
+NOT YET CREATED
+
+GOVERNING STATE:
+
+CURRENT EPOCH = 2
+REVOKED EPOCHS = {1}
+
+COMPROMISED AGENT:
+
+AGENT_X
+
+LEGITIMATE PEER:
+
+AGENT_A
+
+AUTHORITIES:
+
+AUTH_F10_PEER_A
+SUBJECT = AGENT_A
+EPOCH = 2
+TOOL = TOOL_F10_PEER
+ACTION = F10_PRIVILEGED_WRITE
+VALID = TRUE
+CONSUMED = FALSE
+
+AUTH_F10_X_STALE_E1
+SUBJECT = AGENT_X
+EPOCH = 1
+TOOL = TOOL_F10_LOW
+ACTION = F10_PRIVILEGED_WRITE
+VALID = TRUE
+CONSUMED = FALSE
+
+AUTH_F10_X_LOW_E2
+SUBJECT = AGENT_X
+EPOCH = 2
+TOOL = TOOL_F10_LOW
+ACTION = F10_PRIVILEGED_WRITE
+VALID = TRUE
+CONSUMED = FALSE
+
+HOSTILE ATTACK ORDER:
+
+1. AGENT_X presents AUTH_F10_PEER_A
+   EXPECT REFUSE / PRESENTER_IDENTITY_MISMATCH
+
+2. AGENT_X presents AUTH_F10_X_STALE_E1
+   EXPECT REFUSE / AUTHORITY_EPOCH_REVOKED
+
+3. AGENT_X presents AUTH_F10_X_LOW_E2 to TOOL_F10_HIGH
+   EXPECT REFUSE / TOOL_IDENTITY_MISMATCH
+
+REQUIRED UNAUTHORIZED CONSEQUENCE TOTAL:
+
+0
+
+POST-ATTACK INTEGRITY:
+
+The exact same AUTH_F10_PEER_A runtime authority object used in the borrowed-authority attack must later be reused by AGENT_A.
+
+Expected:
+PERMIT / AUTHORIZED / DELTA 1
+
+The exact same AUTH_F10_X_LOW_E2 runtime authority object used in the high-tool escalation attack must later be reused by AGENT_X through TOOL_F10_LOW.
+
+Expected:
+PERMIT / AUTHORIZED / DELTA 1
+
+BOUNDARY INTEGRITY:
+
+Hostile refusal must not:
+
+- alter current epoch;
+- remove revoked epoch 1;
+- rewrite authority subject binding;
+- rewrite authority epoch;
+- rewrite tool binding;
+- expand action scope;
+- invalidate legitimate authority;
+- consume legitimate authority on refusal;
+- confer TOOL_F10_HIGH standing.
+
+EXPECTED FINAL TOOL COUNTERS:
+
+TOOL_F10_PEER = 1
+TOOL_F10_LOW  = 1
+TOOL_F10_HIGH = 0
+
+BOUNDARY:
+
+This examination provides bounded application-level execution-authority containment only.
+
+It does not establish malware containment, operating-system containment, cross-process containment, cross-host containment, compromise detection, arbitrary privilege-escalation prevention, production identity assurance, or distributed containment.
+
+No F10 execution has occurred at the time of this binding.
+
+Any first observed PASS or FAIL must be preserved without retrospective repair.
+
+Lock it.
+Log it.
+Prove it.
