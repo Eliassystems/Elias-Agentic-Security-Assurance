@@ -1,0 +1,161 @@
+EASA-F14 IMPLEMENTATION BINDING
+
+STATUS:
+FROZEN PRE-EXECUTION IMPLEMENTATION BINDING
+
+EXAMINATION:
+EASA-F14
+
+PROPERTY:
+CONCURRENT EVIDENCE / WITNESS INTEGRITY
+
+DEFINITION:
+02_threat_models/EASA-F14-DEFINITION.md
+SHA256: 344E0411C5F4991D0BC987A6799E2B9434C948E28F24F4470253EABC2BDEDB06
+
+EXECUTION CONTROL:
+03_controls/easa_f14_execution.py
+SHA256: 26A70FECD61683A78C2B6CBEC65F477B7387068551AFC6C008CE3647D72655EF
+
+WITNESS CONTROL:
+03_controls/easa_f14_witness.py
+SHA256: 521B9DEE4C2FA17640FC2720795C6FA174A07D63BB726F5052DE84D47B3C121D
+
+HARNESS:
+04_tests/easa_f14_harness.py
+SHA256: 445A0EB564FD38A558208E2B9272A8B58B851308398B1E66552195FAE61216C5
+
+DEFINITION FREEZE:
+51cfbcb
+
+ANTECEDENT:
+EASA-F13 PASS / CLOSED
+
+F13 DETERMINATION:
+f29504e
+
+F13 DETERMINATION SHA256:
+8E6B8A9E368DCC41BD6D1516B2D2C7AF302F0F0F1238445A9A0EC27EB093FED3
+
+EXECUTION STATE:
+NOT YET RUN
+
+THREADS:
+NOT YET STARTED
+
+START BARRIER:
+NOT YET ENTERED
+
+DECISIONS:
+NOT YET CREATED
+
+WITNESS RECEIPTS:
+NOT YET CREATED
+
+DECISION DIGESTS:
+NOT YET CREATED
+
+WITNESS STORE:
+NOT YET USED
+
+CONSEQUENCES:
+NOT YET PRODUCED
+
+FIRST OBSERVATION:
+NOT YET CREATED
+
+FROZEN ATTEMPT POPULATION:
+
+F14-ATTEMPT-01 -> AGENT_F14-01 -> AUTH_F14-01 -> F14-DECISION-01 -> F14-WITNESS-01
+F14-ATTEMPT-02 -> AGENT_F14-02 -> NO AUTHORITY -> F14-DECISION-02 -> F14-WITNESS-02
+F14-ATTEMPT-03 -> AGENT_F14-03 -> AUTH_F14-03 -> F14-DECISION-03 -> F14-WITNESS-03
+F14-ATTEMPT-04 -> AGENT_F14-04 -> NO AUTHORITY -> F14-DECISION-04 -> F14-WITNESS-04
+F14-ATTEMPT-05 -> AGENT_F14-05 -> AUTH_F14-05 -> F14-DECISION-05 -> F14-WITNESS-05
+F14-ATTEMPT-06 -> AGENT_F14-06 -> NO AUTHORITY -> F14-DECISION-06 -> F14-WITNESS-06
+F14-ATTEMPT-07 -> AGENT_F14-07 -> AUTH_F14-07 -> F14-DECISION-07 -> F14-WITNESS-07
+F14-ATTEMPT-08 -> AGENT_F14-08 -> NO AUTHORITY -> F14-DECISION-08 -> F14-WITNESS-08
+F14-ATTEMPT-09 -> AGENT_F14-09 -> AUTH_F14-09 -> F14-DECISION-09 -> F14-WITNESS-09
+F14-ATTEMPT-10 -> AGENT_F14-10 -> NO AUTHORITY -> F14-DECISION-10 -> F14-WITNESS-10
+F14-ATTEMPT-11 -> AGENT_F14-11 -> AUTH_F14-11 -> F14-DECISION-11 -> F14-WITNESS-11
+F14-ATTEMPT-12 -> AGENT_F14-12 -> NO AUTHORITY -> F14-DECISION-12 -> F14-WITNESS-12
+
+EXPECTED:
+
+12 WORKERS
+
+ONE COMMON START BARRIER
+
+6 PERMIT
+
+6 REFUSE
+
+12 UNIQUE ATTEMPT IDs
+
+12 UNIQUE DECISION IDs
+
+12 UNIQUE WITNESS IDs
+
+12 ACCEPTED EVIDENCE CHAINS
+
+0 DUPLICATE REJECTIONS
+
+0 WORKER EXCEPTIONS
+
+0 DIGEST MISMATCHES
+
+0 ATTRIBUTION MISMATCHES
+
+AGGREGATE EVIDENCE CONSEQUENCE DELTA:
+6
+
+FINAL TOOL_F14 COUNTER:
+6
+
+IMPORTANT:
+
+Decision and witness identities are prospectively derived from attempt identity.
+
+They are not allocated from thread completion order.
+
+Concurrent completion order may vary.
+
+Canonical reconstruction occurs by attempt identity.
+
+The shared witness store rejects duplicate attempt,
+decision or witness identities rather than overwriting evidence.
+
+Witness-store admission is one protected same-process operation.
+
+SHA-256 binds the canonical decision payload to its witness receipt.
+
+SHA-256 does not establish external identity authenticity,
+digital signature, trusted timestamping or non-repudiation.
+
+BOUNDARY:
+
+F14 is a bounded 12-thread / one-process evidence-integrity examination.
+
+It does not establish:
+
+distributed transaction integrity,
+cross-process locking,
+cross-host evidence integrity,
+database serializability,
+crash durability,
+external SIEM completeness,
+multi-region witness consistency,
+or unlimited concurrency.
+
+No F14 execution, concurrent decision, witness receipt,
+decision digest, completion order, or consequence has occurred
+at the time of this binding.
+
+The first observed result must be preserved whether PASS or FAIL.
+
+No retrospective evidence reconstruction.
+
+No retrospective attribution repair.
+
+Lock it.
+Log it.
+Prove it.
