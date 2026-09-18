@@ -1,0 +1,73 @@
+{
+  "barrier_release_time_utc": "2026-09-18T10:44:59.843168+00:00",
+  "checks": {
+    "agent_a_explicitly_authorized": true,
+    "agent_b_explicitly_authorized": true,
+    "both_workers_observed_waiting_at_barrier": true,
+    "concurrent_action_authorized": true,
+    "concurrent_consequence_delta_exactly_one": true,
+    "concurrent_governing_state_valid": true,
+    "concurrent_tool_binding_valid": true,
+    "exactly_one_permit": true,
+    "exactly_one_refuse": true,
+    "exactly_two_worker_results": true,
+    "loser_is_other_authorized_presenter": true,
+    "no_identity_mismatch_refusal": true,
+    "no_scope_mismatch_refusal": true,
+    "no_tool_mismatch_refusal": true,
+    "permit_attempt_delta_exactly_one": true,
+    "positive_authority_distinct_from_concurrent": true,
+    "positive_case_consequence_delta_one": true,
+    "positive_consumed_after": true,
+    "positive_started_unconsumed": true,
+    "positive_verdict_permit": true,
+    "refusal_reason_already_consumed": true,
+    "refused_attempt_delta_zero": true,
+    "shared_authority_consumed_after": true,
+    "shared_authority_same_runtime_object": true,
+    "shared_authority_single_use": true,
+    "shared_authority_unconsumed_before_release": true,
+    "shared_authority_valid_before_release": true,
+    "winner_is_authorized_presenter": true
+  },
+  "claim_state": "OBSERVATION_SUPPORTS_DEFINED_PROPERTY",
+  "concurrent_attempt_count": 2,
+  "concurrent_consequence_after": 2,
+  "concurrent_consequence_before": 1,
+  "concurrent_consequence_delta": 1,
+  "concurrent_tests": [
+    "EASA-F08-CONCURRENT-A-001",
+    "EASA-F08-CONCURRENT-B-001"
+  ],
+  "examination": "EASA-F08",
+  "final_shared_authority_consumed": true,
+  "final_tool_consequence_counter": 2,
+  "loser_presenter": "AGENT_A",
+  "observation_time_utc": "2026-09-18T10:44:59.841474+00:00",
+  "overall_result": "PASS",
+  "permit_count": 1,
+  "positive_test": "EASA-F08-POS-001",
+  "property": "CONCURRENT_SINGLE_CONSUMPTION_COLLISION_CONTROL",
+  "refusal_reasons": [
+    "EXECUTION_AUTHORITY_ALREADY_CONSUMED"
+  ],
+  "refuse_count": 1,
+  "shared_authority_state_before_release": {
+    "authority_consumed": false,
+    "authority_id": "AUTH_F08_CONCURRENT",
+    "authority_single_use": true,
+    "authority_valid": true,
+    "authorized_actions": [
+      "CONCURRENT_PRIVILEGED_WRITE"
+    ],
+    "authorized_presenters": [
+      "AGENT_A",
+      "AGENT_B"
+    ],
+    "bound_tool_identity": "TOOL_F08",
+    "governing_state_valid": true,
+    "same_shared_runtime_object_reference": true
+  },
+  "winner_presenter": "AGENT_B",
+  "workers_waiting_at_barrier_before_release": true
+}

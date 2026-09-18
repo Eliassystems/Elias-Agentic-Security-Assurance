@@ -1,0 +1,27 @@
+{
+  "action": "CONCURRENT_PRIVILEGED_WRITE",
+  "authority_consumed_after": true,
+  "authority_consumed_before": false,
+  "authority_id": "AUTH_F08_POS",
+  "authority_single_use": true,
+  "authority_valid_before": true,
+  "authorized_action": "CONCURRENT_PRIVILEGED_WRITE",
+  "authorized_presenters": [
+    "AGENT_A"
+  ],
+  "bound_tool_identity": "TOOL_F08",
+  "case": "NON_CONCURRENT_POSITIVE_CONTROL",
+  "case_consequence_delta": 1,
+  "consequence_after": 1,
+  "consequence_before": 0,
+  "consequence_delta": 1,
+  "governing_state_valid_before": true,
+  "observation_time_utc": "2026-09-18T10:44:59.841474+00:00",
+  "presenter_identity": "AGENT_A",
+  "reason": "AUTHORIZED",
+  "target_tool_identity": "TOOL_F08",
+  "test_id": "EASA-F08-POS-001",
+  "tool_counter_after_case": 1,
+  "tool_counter_before_case": 0,
+  "verdict": "PERMIT"
+}
