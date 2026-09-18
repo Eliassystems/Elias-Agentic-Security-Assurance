@@ -1,0 +1,14 @@
+{
+  "acknowledgement_status": "ACKNOWLEDGED",
+  "application_status": "APPLIED",
+  "error": null,
+  "event_recorded": true,
+  "node_id": "NODE_C",
+  "prior_local_epoch": 1,
+  "receipt_id": "F09-RECEIPT-NODE-C",
+  "receipt_time_utc": "2026-09-18T10:55:19.189739+00:00",
+  "resulting_local_epoch": 2,
+  "revocation_event_id": "REV_F09_E1_TO_E2",
+  "revoked_epoch": 1,
+  "revoked_epoch_recorded": true
+}

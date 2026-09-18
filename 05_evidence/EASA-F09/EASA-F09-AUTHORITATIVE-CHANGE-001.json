@@ -1,0 +1,31 @@
+{
+  "change_result": {
+    "event_id": "REV_F09_E1_TO_E2",
+    "prior_authoritative_epoch": 1,
+    "resulting_authoritative_epoch": 2,
+    "revoked_epoch": 1,
+    "revoked_epochs_after": [
+      1
+    ]
+  },
+  "change_time_utc": "2026-09-18T10:55:19.186421+00:00",
+  "event": {
+    "event_id": "REV_F09_E1_TO_E2",
+    "new_epoch": 2,
+    "prior_epoch": 1,
+    "revoked_epoch": 1
+  },
+  "examination": "EASA-F09",
+  "observation_time_utc": "2026-09-18T10:55:19.186346+00:00",
+  "record_type": "AUTHORITATIVE_EPOCH_CHANGE",
+  "source_after": {
+    "current_epoch": 2,
+    "revoked_epochs": [
+      1
+    ]
+  },
+  "source_before": {
+    "current_epoch": 1,
+    "revoked_epochs": []
+  }
+}

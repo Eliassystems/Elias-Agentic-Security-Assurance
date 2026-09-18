@@ -1,0 +1,153 @@
+{
+  "all_propagation_receipts_complete": true,
+  "authoritative_change_time_utc": "2026-09-18T10:55:19.186421+00:00",
+  "checks": {
+    "all_nodes_epoch_2_after_propagation": true,
+    "all_nodes_record_epoch_1_revoked": true,
+    "all_nodes_record_event_identity": true,
+    "all_receipts_acknowledged": true,
+    "all_receipts_before_stale_attempts": true,
+    "all_receipts_complete": true,
+    "all_receipts_same_event": true,
+    "all_stale_attempts_refused": true,
+    "all_stale_authorities_epoch_1": true,
+    "all_stale_authorities_remain_unconsumed": true,
+    "all_stale_authorities_unconsumed_before": true,
+    "all_stale_authorities_valid_before": true,
+    "all_stale_deltas_zero": true,
+    "all_stale_reasons_epoch_revoked": true,
+    "authoritative_epoch_1_revoked": true,
+    "authoritative_epoch_advanced_1_to_2": true,
+    "authoritative_source_started_epoch_1": true,
+    "current_authority_consumed_after": true,
+    "current_authority_epoch_2": true,
+    "current_epoch_not_revoked": true,
+    "current_positive_delta_one": true,
+    "current_positive_permitted": true,
+    "current_positive_reason_authorized": true,
+    "no_consumed_authority_refusal": true,
+    "no_identity_mismatch_refusal": true,
+    "no_scope_mismatch_refusal": true,
+    "no_tool_mismatch_refusal": true,
+    "node_a_final_counter_zero": true,
+    "node_b_final_counter_zero": true,
+    "node_c_final_counter_one": true,
+    "node_revoked_sets_distinct": true,
+    "node_state_objects_distinct": true,
+    "nodes_started_epoch_1": true,
+    "nodes_started_without_revocations": true,
+    "revocation_event_identity_correct": true,
+    "total_stale_delta_zero": true
+  },
+  "claim_state": "OBSERVATION_SUPPORTS_DEFINED_PROPERTY",
+  "current_epoch_positive_delta": 1,
+  "current_epoch_positive_performed": true,
+  "current_epoch_positive_verdict": "PERMIT",
+  "examination": "EASA-F09",
+  "final_tool_counters": {
+    "NODE_A": 0,
+    "NODE_B": 0,
+    "NODE_C": 1
+  },
+  "initial_node_state": {
+    "NODE_A": {
+      "current_epoch": 1,
+      "last_applied_revocation_event": null,
+      "revoked_epochs": []
+    },
+    "NODE_B": {
+      "current_epoch": 1,
+      "last_applied_revocation_event": null,
+      "revoked_epochs": []
+    },
+    "NODE_C": {
+      "current_epoch": 1,
+      "last_applied_revocation_event": null,
+      "revoked_epochs": []
+    }
+  },
+  "node_state_after_propagation": {
+    "NODE_A": {
+      "current_epoch": 2,
+      "last_applied_revocation_event": "REV_F09_E1_TO_E2",
+      "revoked_epochs": [
+        1
+      ]
+    },
+    "NODE_B": {
+      "current_epoch": 2,
+      "last_applied_revocation_event": "REV_F09_E1_TO_E2",
+      "revoked_epochs": [
+        1
+      ]
+    },
+    "NODE_C": {
+      "current_epoch": 2,
+      "last_applied_revocation_event": "REV_F09_E1_TO_E2",
+      "revoked_epochs": [
+        1
+      ]
+    }
+  },
+  "node_state_objects_distinct": true,
+  "observation_time_utc": "2026-09-18T10:55:19.186346+00:00",
+  "overall_result": "PASS",
+  "property": "MULTI_AGENT_REVOCATION_PROPAGATION_EPOCH_INVALIDATION",
+  "receipts": {
+    "NODE_A": {
+      "acknowledgement_status": "ACKNOWLEDGED",
+      "application_status": "APPLIED",
+      "error": null,
+      "event_recorded": true,
+      "node_id": "NODE_A",
+      "prior_local_epoch": 1,
+      "receipt_id": "F09-RECEIPT-NODE-A",
+      "receipt_time_utc": "2026-09-18T10:55:19.186963+00:00",
+      "resulting_local_epoch": 2,
+      "revocation_event_id": "REV_F09_E1_TO_E2",
+      "revoked_epoch": 1,
+      "revoked_epoch_recorded": true
+    },
+    "NODE_B": {
+      "acknowledgement_status": "ACKNOWLEDGED",
+      "application_status": "APPLIED",
+      "error": null,
+      "event_recorded": true,
+      "node_id": "NODE_B",
+      "prior_local_epoch": 1,
+      "receipt_id": "F09-RECEIPT-NODE-B",
+      "receipt_time_utc": "2026-09-18T10:55:19.187390+00:00",
+      "resulting_local_epoch": 2,
+      "revocation_event_id": "REV_F09_E1_TO_E2",
+      "revoked_epoch": 1,
+      "revoked_epoch_recorded": true
+    },
+    "NODE_C": {
+      "acknowledgement_status": "ACKNOWLEDGED",
+      "application_status": "APPLIED",
+      "error": null,
+      "event_recorded": true,
+      "node_id": "NODE_C",
+      "prior_local_epoch": 1,
+      "receipt_id": "F09-RECEIPT-NODE-C",
+      "receipt_time_utc": "2026-09-18T10:55:19.189739+00:00",
+      "resulting_local_epoch": 2,
+      "revocation_event_id": "REV_F09_E1_TO_E2",
+      "revoked_epoch": 1,
+      "revoked_epoch_recorded": true
+    }
+  },
+  "receipts_completed_time_utc": "2026-09-18T10:55:19.190429+00:00",
+  "revocation_event": {
+    "event_id": "REV_F09_E1_TO_E2",
+    "new_epoch": 2,
+    "prior_epoch": 1,
+    "revoked_epoch": 1
+  },
+  "revoked_set_objects_distinct": true,
+  "stale_attempt_count": 3,
+  "stale_attempts_performed": true,
+  "stale_attempts_start_time_utc": "2026-09-18T10:55:19.190447+00:00",
+  "stale_refuse_count": 3,
+  "stale_total_consequence_delta": 0
+}
