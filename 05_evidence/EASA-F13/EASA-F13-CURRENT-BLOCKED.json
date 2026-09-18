@@ -1,0 +1,78 @@
+{
+  "authoritative_peer_state_after": {
+    "admissible": false,
+    "peer_id": "PEER_B",
+    "standing": "PEER_WITHDRAWN",
+    "state_identity": "PEER_B_STATE_V2",
+    "version": 2
+  },
+  "authoritative_peer_state_before": {
+    "admissible": false,
+    "peer_id": "PEER_B",
+    "standing": "PEER_WITHDRAWN",
+    "state_identity": "PEER_B_STATE_V2",
+    "version": 2
+  },
+  "authority_after_execution": {
+    "artifact_type": "EXECUTION_AUTHORITY",
+    "authority_id": "AUTH_F13_CURRENT_BLOCKED",
+    "authorized_action": "F13_PEER_DEPENDENT_WRITE",
+    "bound_tool_identity": "TOOL_F13",
+    "consumed": false,
+    "issuer_identity": "AUTHORITY_SOURCE_F13",
+    "subject_identity": "AGENT_A",
+    "valid": true
+  },
+  "authority_before_execution": {
+    "artifact_type": "EXECUTION_AUTHORITY",
+    "authority_id": "AUTH_F13_CURRENT_BLOCKED",
+    "authorized_action": "F13_PEER_DEPENDENT_WRITE",
+    "bound_tool_identity": "TOOL_F13",
+    "consumed": false,
+    "issuer_identity": "AUTHORITY_SOURCE_F13",
+    "subject_identity": "AGENT_A",
+    "valid": true
+  },
+  "authority_contains_peer_state_fields": false,
+  "authority_issue_event_index": 8,
+  "execution": {
+    "action": "F13_PEER_DEPENDENT_WRITE",
+    "authoritative_peer_admissible": false,
+    "authoritative_peer_id": "PEER_B",
+    "authoritative_peer_standing": "PEER_WITHDRAWN",
+    "authoritative_peer_state_identity": "PEER_B_STATE_V2",
+    "authoritative_peer_version": 2,
+    "authority_consumed_after": false,
+    "authority_consumed_before": false,
+    "authority_id": "AUTH_F13_CURRENT_BLOCKED",
+    "authority_issuer_identity": "AUTHORITY_SOURCE_F13",
+    "authority_valid": true,
+    "consequence_after": 1,
+    "consequence_before": 1,
+    "consequence_delta": 0,
+    "freshness_correspondence": true,
+    "local_peer_admissible": false,
+    "local_peer_id": "PEER_B",
+    "local_peer_standing": "PEER_WITHDRAWN",
+    "local_peer_state_identity": "PEER_B_STATE_V2",
+    "local_peer_version": 2,
+    "presenter_identity": "AGENT_A",
+    "reason": "PEER_STANDING_NOT_ADMISSIBLE",
+    "target_tool_identity": "TOOL_F13",
+    "verdict": "REFUSE"
+  },
+  "execution_event_index": 9,
+  "fresh_v2_snapshot_captured_after_stale_attempt": true,
+  "local_snapshot": {
+    "admissible": false,
+    "peer_id": "PEER_B",
+    "standing": "PEER_WITHDRAWN",
+    "state_identity": "PEER_B_STATE_V2",
+    "version": 2
+  },
+  "observation_time_utc": "2026-09-18T11:39:31.169731+00:00",
+  "stale_execution_event_index": 6,
+  "test_id": "EASA-F13-CURRENT-BLOCKED",
+  "tool_counter_after": 1,
+  "v2_snapshot_capture_event_index": 7
+}

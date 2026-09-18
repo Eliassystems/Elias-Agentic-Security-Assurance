@@ -1,0 +1,36 @@
+{
+  "agent_identity": "AGENT_A",
+  "agent_local_snapshot_v1": {
+    "admissible": true,
+    "peer_id": "PEER_B",
+    "standing": "PEER_READY",
+    "state_identity": "PEER_B_STATE_V1",
+    "version": 1
+  },
+  "authoritative_peer_state": {
+    "admissible": true,
+    "peer_id": "PEER_B",
+    "standing": "PEER_READY",
+    "state_identity": "PEER_B_STATE_V1",
+    "version": 1
+  },
+  "authority_source": {
+    "issued_count": 0,
+    "issued_ids": [],
+    "source_identity": "AUTHORITY_SOURCE_F13"
+  },
+  "authority_source_identity": "AUTHORITY_SOURCE_F13",
+  "event_index": 1,
+  "examination": "EASA-F13",
+  "execution_gate_policy": {
+    "expected_authority_source_identity": "AUTHORITY_SOURCE_F13",
+    "requires_admissible_peer_standing": true,
+    "requires_current_peer_state": true
+  },
+  "observation_time_utc": "2026-09-18T11:39:31.169731+00:00",
+  "peer_identity": "PEER_B",
+  "peer_state_source_identity": "PEER_STATE_SOURCE_F13",
+  "record_type": "INITIAL_STATE",
+  "snapshot_is_distinct_runtime_object": true,
+  "tool_counter": 0
+}

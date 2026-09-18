@@ -1,0 +1,70 @@
+{
+  "authoritative_peer_state": {
+    "admissible": true,
+    "peer_id": "PEER_B",
+    "standing": "PEER_READY",
+    "state_identity": "PEER_B_STATE_V3",
+    "version": 3
+  },
+  "authority_after_execution": {
+    "artifact_type": "EXECUTION_AUTHORITY",
+    "authority_id": "AUTH_F13_RECOVERY",
+    "authorized_action": "F13_PEER_DEPENDENT_WRITE",
+    "bound_tool_identity": "TOOL_F13",
+    "consumed": true,
+    "issuer_identity": "AUTHORITY_SOURCE_F13",
+    "subject_identity": "AGENT_A",
+    "valid": true
+  },
+  "authority_before_execution": {
+    "artifact_type": "EXECUTION_AUTHORITY",
+    "authority_id": "AUTH_F13_RECOVERY",
+    "authorized_action": "F13_PEER_DEPENDENT_WRITE",
+    "bound_tool_identity": "TOOL_F13",
+    "consumed": false,
+    "issuer_identity": "AUTHORITY_SOURCE_F13",
+    "subject_identity": "AGENT_A",
+    "valid": true
+  },
+  "authority_contains_peer_state_fields": false,
+  "authority_issue_event_index": 12,
+  "execution": {
+    "action": "F13_PEER_DEPENDENT_WRITE",
+    "authoritative_peer_admissible": true,
+    "authoritative_peer_id": "PEER_B",
+    "authoritative_peer_standing": "PEER_READY",
+    "authoritative_peer_state_identity": "PEER_B_STATE_V3",
+    "authoritative_peer_version": 3,
+    "authority_consumed_after": true,
+    "authority_consumed_before": false,
+    "authority_id": "AUTH_F13_RECOVERY",
+    "authority_issuer_identity": "AUTHORITY_SOURCE_F13",
+    "authority_valid": true,
+    "consequence_after": 2,
+    "consequence_before": 1,
+    "consequence_delta": 1,
+    "freshness_correspondence": true,
+    "local_peer_admissible": true,
+    "local_peer_id": "PEER_B",
+    "local_peer_standing": "PEER_READY",
+    "local_peer_state_identity": "PEER_B_STATE_V3",
+    "local_peer_version": 3,
+    "presenter_identity": "AGENT_A",
+    "reason": "AUTHORIZED",
+    "target_tool_identity": "TOOL_F13",
+    "verdict": "PERMIT"
+  },
+  "execution_event_index": 13,
+  "local_snapshot": {
+    "admissible": true,
+    "peer_id": "PEER_B",
+    "standing": "PEER_READY",
+    "state_identity": "PEER_B_STATE_V3",
+    "version": 3
+  },
+  "observation_time_utc": "2026-09-18T11:39:31.169731+00:00",
+  "snapshot_capture_event_index": 11,
+  "test_id": "EASA-F13-RECOVERY-POSITIVE",
+  "tool_counter_after": 2,
+  "transition_v2_v3_event_index": 10
+}

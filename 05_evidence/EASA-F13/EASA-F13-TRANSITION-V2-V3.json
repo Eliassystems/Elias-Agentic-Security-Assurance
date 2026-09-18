@@ -1,0 +1,42 @@
+{
+  "authoritative_state_after_transition": {
+    "admissible": true,
+    "peer_id": "PEER_B",
+    "standing": "PEER_READY",
+    "state_identity": "PEER_B_STATE_V3",
+    "version": 3
+  },
+  "current_blocked_execution_event_index": 9,
+  "historical_v1_snapshot_preserved": {
+    "admissible": true,
+    "peer_id": "PEER_B",
+    "standing": "PEER_READY",
+    "state_identity": "PEER_B_STATE_V1",
+    "version": 1
+  },
+  "historical_v2_state_preserved": {
+    "admissible": false,
+    "peer_id": "PEER_B",
+    "standing": "PEER_WITHDRAWN",
+    "state_identity": "PEER_B_STATE_V2",
+    "version": 2
+  },
+  "observation_time_utc": "2026-09-18T11:39:31.169731+00:00",
+  "stale_execution_event_index": 6,
+  "test_id": "F13-TRANSITION-PEER-B-V2-V3",
+  "transition": {
+    "peer_id": "PEER_B",
+    "prior_admissible": false,
+    "prior_standing": "PEER_WITHDRAWN",
+    "prior_state_identity": "PEER_B_STATE_V2",
+    "prior_version": 2,
+    "resulting_admissible": true,
+    "resulting_standing": "PEER_READY",
+    "resulting_state_identity": "PEER_B_STATE_V3",
+    "resulting_version": 3,
+    "source_identity": "PEER_STATE_SOURCE_F13",
+    "transition_identity": "F13-TRANSITION-PEER-B-V2-V3"
+  },
+  "transition_event_index": 10,
+  "transition_occurs_after_both_v2_negatives": true
+}
