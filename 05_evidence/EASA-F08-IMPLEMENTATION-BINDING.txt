@@ -1,0 +1,112 @@
+EASA-F08 IMPLEMENTATION BINDING
+
+STATUS:
+FROZEN PRE-EXECUTION IMPLEMENTATION BINDING
+
+EXAMINATION:
+EASA-F08
+
+PROPERTY:
+CONCURRENT SINGLE-CONSUMPTION / COLLISION CONTROL
+
+DEFINITION:
+02_threat_models/EASA-F08-DEFINITION.md
+SHA256: A796265AF1F1CF85401AFD4AC09976A9738508DE92A3634362FB21BEE6A3DB30
+
+CONTROL:
+03_controls/easa_f08_control.py
+SHA256: 88763E28BCE9AAFD99D9FEA4CA010D45C6DE5CD7DF86D53FDAD12E7BFD43D642
+
+HARNESS:
+04_tests/easa_f08_harness.py
+SHA256: 7D6E8DE29399342706101E684025D150C20B53C405C0E935CE74BF6BF766930E
+
+F08 DEFINITION FREEZE:
+fea89ee
+
+ANTECEDENT:
+EASA-F07 PASS / CLOSED
+
+F07 DETERMINATION:
+9f60580
+
+EXECUTION STATE:
+NOT YET RUN
+
+FIRST OBSERVATION STATE:
+NOT YET CREATED
+
+CONCURRENCY MODEL:
+
+Two worker threads.
+
+One exact shared AUTH_F08_CONCURRENT runtime authority object.
+
+One common synchronization barrier.
+
+Both workers must be observed waiting at the barrier before the main harness thread releases the barrier cycle.
+
+AUTHORIZED PRESENTERS:
+
+AGENT_A
+AGENT_B
+
+SHARED ACTION:
+
+CONCURRENT_PRIVILEGED_WRITE
+
+SHARED TOOL:
+
+TOOL_F08
+
+SHARED AUTHORITY BEFORE RELEASE:
+
+VALID = TRUE
+CONSUMED = FALSE
+SINGLE_USE = TRUE
+GOVERNING STATE VALID = TRUE
+
+COLLISION CONTROL:
+
+The authority object contains one thread lock.
+
+Within that lock, the execution gate:
+
+1. reads current consumption state;
+2. validates authority, presenter, action, tool and governing state;
+3. claims the single use by setting CONSUMED = TRUE;
+4. performs the bounded consequential commit.
+
+A second concurrent contender cannot enter the same authority decision boundary until the first contender has released it.
+
+The second contender then observes the authority as consumed.
+
+EXPECTED CONCURRENT OUTCOME:
+
+PERMIT COUNT = 1
+REFUSE COUNT = 1
+REFUSAL REASON = EXECUTION_AUTHORITY_ALREADY_CONSUMED
+CONCURRENT CONSEQUENCE DELTA = 1
+FINAL SHARED AUTHORITY CONSUMED = TRUE
+
+WINNER IDENTITY:
+
+NOT PREDETERMINED
+
+Either AGENT_A or AGENT_B may win.
+
+The winning presenter is not part of the PASS criterion.
+
+BOUNDARY:
+
+This implementation is a bounded same-process, shared-memory, thread-based collision examination.
+
+It does not establish distributed locking, cross-process atomicity, cross-host atomicity, network partition safety, database serializability, cluster-wide exactly-once semantics, or universal linearizability.
+
+The F08 first observation has not occurred at the time of this binding.
+
+Any first observed PASS or FAIL must be preserved without retrospective repair.
+
+Lock it.
+Log it.
+Prove it.
