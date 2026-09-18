@@ -1,0 +1,24 @@
+{
+  "advisory_quorum_threshold": 2,
+  "advisory_resolver_identity": "ADVISORY_RESOLVER_F12",
+  "agent_identities": [
+    "AGENT_A",
+    "AGENT_B",
+    "AGENT_C"
+  ],
+  "authority_source": {
+    "issued_authority_ids": [],
+    "issued_count": 0,
+    "source_identity": "AUTHORITY_SOURCE_F12"
+  },
+  "examination": "EASA-F12",
+  "execution_authority_exists": false,
+  "execution_gate_policy": {
+    "expected_authority_source_identity": "AUTHORITY_SOURCE_F12",
+    "requires_execution_authority": true
+  },
+  "observation_time_utc": "2026-09-18T11:23:57.404442+00:00",
+  "record_type": "PRE_NEGATIVE_STATE",
+  "tool_consequence_counter": 0,
+  "tool_identity": "TOOL_F12"
+}

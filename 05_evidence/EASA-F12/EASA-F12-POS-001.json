@@ -1,0 +1,113 @@
+{
+  "advisory_resolution": {
+    "abstain_count": 0,
+    "advisory_majority": "PROPOSE_PERMIT",
+    "advisory_quorum_met": true,
+    "artifact_type": "ADVISORY_RESOLUTION",
+    "collective_outcome": "ADVISORY_MAJORITY_PERMIT",
+    "participant_count": 3,
+    "permit_count": 2,
+    "quorum_threshold": 2,
+    "recommendations": [
+      {
+        "agent_identity": "AGENT_A",
+        "recommendation": "PROPOSE_PERMIT"
+      },
+      {
+        "agent_identity": "AGENT_B",
+        "recommendation": "PROPOSE_PERMIT"
+      },
+      {
+        "agent_identity": "AGENT_C",
+        "recommendation": "PROPOSE_REFUSE"
+      }
+    ],
+    "refuse_count": 1,
+    "resolver_identity": "ADVISORY_RESOLVER_F12",
+    "unanimous": false
+  },
+  "authority_after_execution": {
+    "artifact_type": "EXECUTION_AUTHORITY",
+    "authority_id": "AUTH_F12_POS",
+    "authorized_action": "F12_PRIVILEGED_WRITE",
+    "bound_tool_identity": "TOOL_F12",
+    "consumed": true,
+    "issuer_identity": "AUTHORITY_SOURCE_F12",
+    "subject_identity": "EXECUTOR_F12",
+    "valid": true
+  },
+  "authority_before_execution": {
+    "artifact_type": "EXECUTION_AUTHORITY",
+    "authority_id": "AUTH_F12_POS",
+    "authorized_action": "F12_PRIVILEGED_WRITE",
+    "bound_tool_identity": "TOOL_F12",
+    "consumed": false,
+    "issuer_identity": "AUTHORITY_SOURCE_F12",
+    "subject_identity": "EXECUTOR_F12",
+    "valid": true
+  },
+  "authority_constitution": {
+    "advisory_resolution_supplied_to_issuer": false,
+    "issuer_component": "AuthoritativeExecutionSource",
+    "issuer_identity": "AUTHORITY_SOURCE_F12"
+  },
+  "authority_source_after_issue": {
+    "issued_authority_ids": [
+      "AUTH_F12_POS"
+    ],
+    "issued_count": 1,
+    "source_identity": "AUTHORITY_SOURCE_F12"
+  },
+  "authority_source_before_issue": {
+    "issued_authority_ids": [],
+    "issued_count": 0,
+    "source_identity": "AUTHORITY_SOURCE_F12"
+  },
+  "execution": {
+    "action": "F12_PRIVILEGED_WRITE",
+    "authority_consumed_after": true,
+    "authority_consumed_before": false,
+    "authority_id": "AUTH_F12_POS",
+    "authority_issuer_identity": "AUTHORITY_SOURCE_F12",
+    "candidate_artifact_type": "EXECUTION_AUTHORITY",
+    "consequence_after": 1,
+    "consequence_before": 0,
+    "consequence_delta": 1,
+    "execution_authority_present": true,
+    "presenter_identity": "EXECUTOR_F12",
+    "reason": "AUTHORIZED",
+    "target_tool_identity": "TOOL_F12",
+    "verdict": "PERMIT"
+  },
+  "execution_gate_policy_after": {
+    "expected_authority_source_identity": "AUTHORITY_SOURCE_F12",
+    "requires_execution_authority": true
+  },
+  "execution_gate_policy_before": {
+    "expected_authority_source_identity": "AUTHORITY_SOURCE_F12",
+    "requires_execution_authority": true
+  },
+  "execution_gate_policy_unchanged": true,
+  "final_tool_consequence_counter": 1,
+  "observation_time_utc": "2026-09-18T11:23:57.404442+00:00",
+  "recommendation_map": {
+    "AGENT_A": "PROPOSE_PERMIT",
+    "AGENT_B": "PROPOSE_PERMIT",
+    "AGENT_C": "PROPOSE_REFUSE"
+  },
+  "recommendations": [
+    {
+      "agent_identity": "AGENT_A",
+      "recommendation": "PROPOSE_PERMIT"
+    },
+    {
+      "agent_identity": "AGENT_B",
+      "recommendation": "PROPOSE_PERMIT"
+    },
+    {
+      "agent_identity": "AGENT_C",
+      "recommendation": "PROPOSE_REFUSE"
+    }
+  ],
+  "test_id": "EASA-F12-POS-001"
+}

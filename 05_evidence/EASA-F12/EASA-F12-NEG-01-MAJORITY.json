@@ -1,0 +1,86 @@
+{
+  "authority_source_after": {
+    "issued_authority_ids": [],
+    "issued_count": 0,
+    "source_identity": "AUTHORITY_SOURCE_F12"
+  },
+  "authority_source_before": {
+    "issued_authority_ids": [],
+    "issued_count": 0,
+    "source_identity": "AUTHORITY_SOURCE_F12"
+  },
+  "authority_source_unchanged": true,
+  "execution": {
+    "action": "F12_PRIVILEGED_WRITE",
+    "authority_consumed_after": null,
+    "authority_consumed_before": null,
+    "authority_id": null,
+    "authority_issuer_identity": null,
+    "candidate_artifact_type": "NONE",
+    "consequence_after": 0,
+    "consequence_before": 0,
+    "consequence_delta": 0,
+    "execution_authority_present": false,
+    "presenter_identity": "EXECUTOR_F12",
+    "reason": "EXECUTION_AUTHORITY_NOT_PRESENT",
+    "target_tool_identity": "TOOL_F12",
+    "verdict": "REFUSE"
+  },
+  "gate_policy_after": {
+    "expected_authority_source_identity": "AUTHORITY_SOURCE_F12",
+    "requires_execution_authority": true
+  },
+  "gate_policy_before": {
+    "expected_authority_source_identity": "AUTHORITY_SOURCE_F12",
+    "requires_execution_authority": true
+  },
+  "gate_policy_unchanged": true,
+  "observation_time_utc": "2026-09-18T11:23:57.404442+00:00",
+  "recommendation_map": {
+    "AGENT_A": "PROPOSE_PERMIT",
+    "AGENT_B": "PROPOSE_PERMIT",
+    "AGENT_C": "PROPOSE_REFUSE"
+  },
+  "recommendations": [
+    {
+      "agent_identity": "AGENT_A",
+      "recommendation": "PROPOSE_PERMIT"
+    },
+    {
+      "agent_identity": "AGENT_B",
+      "recommendation": "PROPOSE_PERMIT"
+    },
+    {
+      "agent_identity": "AGENT_C",
+      "recommendation": "PROPOSE_REFUSE"
+    }
+  ],
+  "resolution": {
+    "abstain_count": 0,
+    "advisory_majority": "PROPOSE_PERMIT",
+    "advisory_quorum_met": true,
+    "artifact_type": "ADVISORY_RESOLUTION",
+    "collective_outcome": "ADVISORY_MAJORITY_PERMIT",
+    "participant_count": 3,
+    "permit_count": 2,
+    "quorum_threshold": 2,
+    "recommendations": [
+      {
+        "agent_identity": "AGENT_A",
+        "recommendation": "PROPOSE_PERMIT"
+      },
+      {
+        "agent_identity": "AGENT_B",
+        "recommendation": "PROPOSE_PERMIT"
+      },
+      {
+        "agent_identity": "AGENT_C",
+        "recommendation": "PROPOSE_REFUSE"
+      }
+    ],
+    "refuse_count": 1,
+    "resolver_identity": "ADVISORY_RESOLVER_F12",
+    "unanimous": false
+  },
+  "test_id": "EASA-F12-NEG-01-MAJORITY"
+}
