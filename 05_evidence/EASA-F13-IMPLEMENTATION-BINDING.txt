@@ -1,0 +1,172 @@
+EASA-F13 IMPLEMENTATION BINDING
+
+STATUS:
+FROZEN PRE-EXECUTION IMPLEMENTATION BINDING
+
+EXAMINATION:
+EASA-F13
+
+PROPERTY:
+STALE PEER-STATE ISOLATION /
+FRESHNESS-BOUND PEER DEPENDENCY
+
+DEFINITION:
+02_threat_models/EASA-F13-DEFINITION.md
+SHA256: ABEE38294082412CAA8AD54AB8F83958A5E602E9E35A908E957C01FEFB823488
+
+PEER-STATE CONTROL:
+03_controls/easa_f13_peer_state.py
+SHA256: A8D568B74D6277E5845A7305E367C51726076A6F3B3A7C34F3D4FF1630E7504C
+
+EXECUTION-AUTHORITY SOURCE:
+03_controls/easa_f13_authority.py
+SHA256: 248730145A7695872199E3A0954EE972B75EB55302DB5E1FE2D7EAC321A7A201
+
+EXECUTION GATE:
+03_controls/easa_f13_execution.py
+SHA256: 3FA86BD35E41A16855A5ACAB855D7868F7DE83A509186521F48764E678D5EAD2
+
+HARNESS:
+04_tests/easa_f13_harness.py
+SHA256: 18E203BBC23DBCD3208E148AE3F60BB2B35EA899D8E818F7C6B174F863CE0E59
+
+F13 DEFINITION FREEZE:
+a51e2db
+
+ANTECEDENT:
+EASA-F12 PASS / CLOSED / REVALIDATED
+
+F12 FINAL REVALIDATION:
+d90a1d2
+
+F13 EXECUTION STATE:
+NOT YET RUN
+
+PEER SOURCE RUNTIME:
+NOT YET INSTANTIATED
+
+VERSION-1 LOCAL SNAPSHOT:
+NOT YET CAPTURED
+
+PRE-CHANGE POSITIVE:
+NOT YET EXECUTED
+
+V1 -> V2 TRANSITION:
+NOT YET EXECUTED
+
+AUTH_F13_STALE_VIEW:
+NOT YET CONSTITUTED
+
+STALE ATTEMPT:
+NOT YET EXECUTED
+
+VERSION-2 CURRENT SNAPSHOT:
+NOT YET CAPTURED
+
+AUTH_F13_CURRENT_BLOCKED:
+NOT YET CONSTITUTED
+
+CURRENT-BLOCKED ATTEMPT:
+NOT YET EXECUTED
+
+V2 -> V3 RECOVERY:
+NOT YET EXECUTED
+
+AUTH_F13_RECOVERY:
+NOT YET CONSTITUTED
+
+RECOVERY POSITIVE:
+NOT YET EXECUTED
+
+FIRST OBSERVATION:
+NOT YET CREATED
+
+IMPORTANT AUTHORITY BOUNDARY:
+
+ExecutionAuthority contains:
+
+- authority identity;
+- issuer identity;
+- subject identity;
+- action binding;
+- tool binding;
+- validity;
+- consumption state.
+
+ExecutionAuthority deliberately contains NO:
+
+- peer version;
+- peer standing;
+- peer state identity;
+- peer admissibility;
+- authority epoch.
+
+The stale condition therefore cannot be carried inside
+AUTH_F13_STALE_VIEW.
+
+It resides only in AGENT_A's local PeerSnapshot.
+
+EXPECTED TEMPORAL ORDER:
+
+1  initial V1 / local V1 capture
+2  AUTH_F13_PRE issue
+3  pre-change PERMIT
+4  V1 -> V2 transition
+5  AUTH_F13_STALE_VIEW issue
+6  stale V1-vs-V2 REFUSE
+7  fresh V2 snapshot capture
+8  AUTH_F13_CURRENT_BLOCKED issue
+9  fresh-but-WITHDRAWN REFUSE
+10 V2 -> V3 transition
+11 fresh V3 snapshot capture
+12 AUTH_F13_RECOVERY issue
+13 recovery PERMIT
+
+EXPECTED CONSEQUENCE SEQUENCE:
+
+PRE-CHANGE POSITIVE:
+1
+
+STALE POST-CHANGE:
+0
+
+CURRENT V2 / WITHDRAWN:
+0
+
+RECOVERY V3:
+1
+
+FINAL TOOL_F13 COUNTER:
+2
+
+EXPECTED STALE REFUSAL:
+
+PEER_STATE_STALE
+
+EXPECTED CURRENT-BLOCKED REFUSAL:
+
+PEER_STANDING_NOT_ADMISSIBLE
+
+BOUNDARY:
+
+This is a bounded same-process semantic freshness examination.
+
+It does not establish production cache coherence,
+cross-process or cross-host synchronization,
+network propagation guarantees,
+distributed database consistency,
+partition tolerance,
+clock freshness,
+or universal TOCTOU elimination.
+
+No F13 runtime peer state, snapshot, transition, authority,
+execution decision or consequence has been produced by this
+implementation at the time of this binding.
+
+Any first observed PASS or FAIL must be preserved exactly.
+
+No retrospective repair.
+
+Lock it.
+Log it.
+Prove it.
