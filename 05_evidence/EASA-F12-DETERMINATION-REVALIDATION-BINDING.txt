@@ -1,0 +1,56 @@
+EASA-F12 DETERMINATION REVALIDATION BINDING
+
+STATUS:
+FROZEN BEFORE REVALIDATION EXECUTION
+
+PURPOSE:
+Prospective adjudication-layer revalidation only.
+
+NO F12 HARNESS RERUN IS PERMITTED.
+
+HISTORICAL FIRST OBSERVATION:
+7464615
+
+HISTORICAL FIRST OBSERVATION STATUS:
+PASS / PRESERVED
+
+ORIGINAL DETERMINATION COMMIT:
+0c183d8
+
+ORIGINAL DETERMINATION SHA256:
+35863A8DBFEEF223C6FC2790E6D5EE0EB018009797FA8F5CF24516F92D41F960
+
+ADJUDICATION DEFECT:
+
+The original interactive PowerShell final-determination command encountered
+a parser failure while constituting its $checks hashtable.
+
+The historical determination commit is preserved unchanged.
+
+This revalidation does not repair or replace the historical first observation.
+
+It prospectively re-evaluates the already-frozen evidence through an
+independently frozen Python revalidator.
+
+REVALIDATOR:
+04_tests/easa_f12_determination_revalidator_v2.py
+
+REVALIDATOR SHA256:
+BF33454A47F864E2517D28E1E31D86B1AB379A37D1A38A18E746356FA6E36587
+
+REVALIDATION EXECUTION STATE:
+NOT YET RUN
+
+REVALIDATION RECEIPT:
+NOT YET CREATED
+
+RULE:
+
+NO HARNESS RERUN.
+NO EVIDENCE MUTATION.
+NO HISTORICAL DETERMINATION DELETION.
+NO RETROSPECTIVE REPAIR.
+
+Lock it.
+Log it.
+Prove it.
