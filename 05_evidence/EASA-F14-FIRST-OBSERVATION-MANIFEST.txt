@@ -1,0 +1,106 @@
+EASA-F14 FIRST OBSERVATION MANIFEST
+
+EXAMINATION:
+EASA-F14
+
+PROPERTY:
+CONCURRENT EVIDENCE / WITNESS INTEGRITY
+
+PRE-EXECUTION COMMIT:
+1ee0273
+
+DEFINITION:
+02_threat_models/EASA-F14-DEFINITION.md
+SHA256: 344E0411C5F4991D0BC987A6799E2B9434C948E28F24F4470253EABC2BDEDB06
+
+DEFINITION HASH RECORD:
+05_evidence/EASA-F14-DEFINITION-HASH.txt
+SHA256: 96166AE6E83CDC16048F6486C465FC149155952482F5F0E21509B53A3D70DCBF
+
+EXECUTION CONTROL:
+03_controls/easa_f14_execution.py
+SHA256: 26A70FECD61683A78C2B6CBEC65F477B7387068551AFC6C008CE3647D72655EF
+
+WITNESS CONTROL:
+03_controls/easa_f14_witness.py
+SHA256: 521B9DEE4C2FA17640FC2720795C6FA174A07D63BB726F5052DE84D47B3C121D
+
+HARNESS:
+04_tests/easa_f14_harness.py
+SHA256: 445A0EB564FD38A558208E2B9272A8B58B851308398B1E66552195FAE61216C5
+
+IMPLEMENTATION BINDING:
+05_evidence/EASA-F14-IMPLEMENTATION-BINDING.txt
+SHA256: B6F33C5ED76F6D73CCE31A87A92853625E642D9D3F85C0C93C1A94FD399E12D0
+
+HARNESS EXIT CODE:
+0
+
+SUMMARY FILE CREATED:
+True
+
+COMPLETE DEFINED EVIDENCE SET:
+True
+
+OBSERVED RESULT:
+PASS
+
+OBSERVED CLAIM STATE:
+OBSERVATION_SUPPORTS_DEFINED_PROPERTY
+
+FIRST-OBSERVATION ARTIFACTS:
+
+05_evidence/EASA-F14/EASA-F14-FIRST-OBSERVATION-CONSOLE.txt
+SHA256: 81D3EF41B2FDC7C03E3DE2873C714F6B4AA162EA3D4F1EC6E5A15B01A63C14E0
+
+05_evidence/EASA-F14/EASA-F14-POPULATION.json
+SHA256: E6641E0B08DA7F7CACE8F46FA63A8866635DC6AE4FA7A6E33D080D4EAD193807
+
+05_evidence/EASA-F14/EASA-F14-RECONSTRUCTION.json
+SHA256: E08B167ED6AE7A5ABBED6BC558D2653040157C389F7DB253010E05ECC86FBF60
+
+05_evidence/EASA-F14/EASA-F14-SUMMARY.json
+SHA256: BCEF7C1B37C504D83C2F4362794B053974B87CE81BE4681432E439CBF836096E
+
+05_evidence/EASA-F14/EASA-F14-WITNESS-STORE.json
+SHA256: C8DA2AB4B59321D1D7191E8F0A7B4456896D54D150C04A7D5BA4399E0719A57E
+
+PRESERVATION RULE:
+
+This manifest records the historical first EASA-F14 execution.
+
+The observation is preserved whether PASS, FAIL, incomplete,
+exception, collision, missing evidence, or attribution failure.
+
+The F14 harness must not be rerun to replace, improve, complete,
+or alter this historical first observation.
+
+Observed thread completion order remains historical evidence.
+
+Canonical reconstruction may reorder records by prospectively
+defined attempt identity for adjudication, but it must not rewrite
+the observed completion order.
+
+No missing decision record may be recreated retrospectively.
+
+No witness receipt may be reconstructed after the fact and treated
+as an original concurrent receipt.
+
+No decision digest mismatch may be repaired by changing the
+historical payload.
+
+No presenter, authority, verdict, reason, consequence delta,
+decision identity, or witness identity may be remapped after
+observation.
+
+Any unexpected collision, duplicate rejection, worker exception,
+missing chain, digest mismatch, attribution mismatch, or incorrect
+aggregate consequence requires a prospectively constituted successor.
+
+NO HARNESS RERUN.
+NO EVIDENCE MUTATION.
+NO RETROSPECTIVE REPAIR.
+
+Lock it.
+Log it.
+Prove it.

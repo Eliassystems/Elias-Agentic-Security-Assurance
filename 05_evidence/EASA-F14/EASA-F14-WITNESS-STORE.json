@@ -1,0 +1,625 @@
+{
+  "accepted_count": 12,
+  "barrier_action_count": 1,
+  "barrier_parties": 13,
+  "completion_order": [
+    "F14-ATTEMPT-10",
+    "F14-ATTEMPT-02",
+    "F14-ATTEMPT-03",
+    "F14-ATTEMPT-04",
+    "F14-ATTEMPT-07",
+    "F14-ATTEMPT-06",
+    "F14-ATTEMPT-08",
+    "F14-ATTEMPT-09",
+    "F14-ATTEMPT-05",
+    "F14-ATTEMPT-11",
+    "F14-ATTEMPT-12",
+    "F14-ATTEMPT-01"
+  ],
+  "decision_record_count": 12,
+  "duplicate_rejection_count": 0,
+  "examination": "EASA-F14",
+  "observation_time_utc": "2026-09-18T11:50:37.019160+00:00",
+  "record_type": "CONCURRENT_WITNESS_STORE_SNAPSHOT",
+  "records": [
+    {
+      "attempt": {
+        "action": "F14_WRITE",
+        "attempt_id": "F14-ATTEMPT-01",
+        "attempt_number": 1,
+        "authority_id": "AUTH_F14-01",
+        "decision_id": "F14-DECISION-01",
+        "expected_consequence_delta": 1,
+        "expected_reason": "AUTHORIZED",
+        "expected_verdict": "PERMIT",
+        "presenter_identity": "AGENT_F14-01",
+        "tool_identity": "TOOL_F14",
+        "witness_id": "F14-WITNESS-01"
+      },
+      "canonical_decision_payload": {
+        "action": "F14_WRITE",
+        "attempt_id": "F14-ATTEMPT-01",
+        "authority_id": "AUTH_F14-01",
+        "consequence_delta": 1,
+        "decision_id": "F14-DECISION-01",
+        "presenter_identity": "AGENT_F14-01",
+        "reason": "AUTHORIZED",
+        "tool_identity": "TOOL_F14",
+        "verdict": "PERMIT"
+      },
+      "decision": {
+        "action": "F14_WRITE",
+        "attempt_id": "F14-ATTEMPT-01",
+        "authority_consumed_after": true,
+        "authority_consumed_before": false,
+        "authority_id": "AUTH_F14-01",
+        "authority_issuer_identity": "AUTHORITY_SOURCE_F14",
+        "consequence_after": 6,
+        "consequence_before": 5,
+        "consequence_delta": 1,
+        "decision_id": "F14-DECISION-01",
+        "presenter_identity": "AGENT_F14-01",
+        "reason": "AUTHORIZED",
+        "tool_identity": "TOOL_F14",
+        "verdict": "PERMIT"
+      },
+      "decision_digest": "E5B60719D7EAF7F535F8EF26CD6487A4940C86F5A8D516ECC887FB747964A8CF",
+      "witness": {
+        "attempt_id": "F14-ATTEMPT-01",
+        "decision_digest": "E5B60719D7EAF7F535F8EF26CD6487A4940C86F5A8D516ECC887FB747964A8CF",
+        "decision_id": "F14-DECISION-01",
+        "witness_id": "F14-WITNESS-01"
+      }
+    },
+    {
+      "attempt": {
+        "action": "F14_WRITE",
+        "attempt_id": "F14-ATTEMPT-02",
+        "attempt_number": 2,
+        "authority_id": null,
+        "decision_id": "F14-DECISION-02",
+        "expected_consequence_delta": 0,
+        "expected_reason": "EXECUTION_AUTHORITY_NOT_PRESENT",
+        "expected_verdict": "REFUSE",
+        "presenter_identity": "AGENT_F14-02",
+        "tool_identity": "TOOL_F14",
+        "witness_id": "F14-WITNESS-02"
+      },
+      "canonical_decision_payload": {
+        "action": "F14_WRITE",
+        "attempt_id": "F14-ATTEMPT-02",
+        "authority_id": null,
+        "consequence_delta": 0,
+        "decision_id": "F14-DECISION-02",
+        "presenter_identity": "AGENT_F14-02",
+        "reason": "EXECUTION_AUTHORITY_NOT_PRESENT",
+        "tool_identity": "TOOL_F14",
+        "verdict": "REFUSE"
+      },
+      "decision": {
+        "action": "F14_WRITE",
+        "attempt_id": "F14-ATTEMPT-02",
+        "authority_consumed_after": null,
+        "authority_consumed_before": null,
+        "authority_id": null,
+        "authority_issuer_identity": null,
+        "consequence_after": 0,
+        "consequence_before": 0,
+        "consequence_delta": 0,
+        "decision_id": "F14-DECISION-02",
+        "presenter_identity": "AGENT_F14-02",
+        "reason": "EXECUTION_AUTHORITY_NOT_PRESENT",
+        "tool_identity": "TOOL_F14",
+        "verdict": "REFUSE"
+      },
+      "decision_digest": "0310D2BF586A6F61793EF2DBCCFDE24CBF0A63A24964CDC9B603E39C5B35B8B8",
+      "witness": {
+        "attempt_id": "F14-ATTEMPT-02",
+        "decision_digest": "0310D2BF586A6F61793EF2DBCCFDE24CBF0A63A24964CDC9B603E39C5B35B8B8",
+        "decision_id": "F14-DECISION-02",
+        "witness_id": "F14-WITNESS-02"
+      }
+    },
+    {
+      "attempt": {
+        "action": "F14_WRITE",
+        "attempt_id": "F14-ATTEMPT-03",
+        "attempt_number": 3,
+        "authority_id": "AUTH_F14-03",
+        "decision_id": "F14-DECISION-03",
+        "expected_consequence_delta": 1,
+        "expected_reason": "AUTHORIZED",
+        "expected_verdict": "PERMIT",
+        "presenter_identity": "AGENT_F14-03",
+        "tool_identity": "TOOL_F14",
+        "witness_id": "F14-WITNESS-03"
+      },
+      "canonical_decision_payload": {
+        "action": "F14_WRITE",
+        "attempt_id": "F14-ATTEMPT-03",
+        "authority_id": "AUTH_F14-03",
+        "consequence_delta": 1,
+        "decision_id": "F14-DECISION-03",
+        "presenter_identity": "AGENT_F14-03",
+        "reason": "AUTHORIZED",
+        "tool_identity": "TOOL_F14",
+        "verdict": "PERMIT"
+      },
+      "decision": {
+        "action": "F14_WRITE",
+        "attempt_id": "F14-ATTEMPT-03",
+        "authority_consumed_after": true,
+        "authority_consumed_before": false,
+        "authority_id": "AUTH_F14-03",
+        "authority_issuer_identity": "AUTHORITY_SOURCE_F14",
+        "consequence_after": 1,
+        "consequence_before": 0,
+        "consequence_delta": 1,
+        "decision_id": "F14-DECISION-03",
+        "presenter_identity": "AGENT_F14-03",
+        "reason": "AUTHORIZED",
+        "tool_identity": "TOOL_F14",
+        "verdict": "PERMIT"
+      },
+      "decision_digest": "77C49070DC0F65C37E6FD55A38CF42901160F348E828A7BB92CE6F0F86424C57",
+      "witness": {
+        "attempt_id": "F14-ATTEMPT-03",
+        "decision_digest": "77C49070DC0F65C37E6FD55A38CF42901160F348E828A7BB92CE6F0F86424C57",
+        "decision_id": "F14-DECISION-03",
+        "witness_id": "F14-WITNESS-03"
+      }
+    },
+    {
+      "attempt": {
+        "action": "F14_WRITE",
+        "attempt_id": "F14-ATTEMPT-04",
+        "attempt_number": 4,
+        "authority_id": null,
+        "decision_id": "F14-DECISION-04",
+        "expected_consequence_delta": 0,
+        "expected_reason": "EXECUTION_AUTHORITY_NOT_PRESENT",
+        "expected_verdict": "REFUSE",
+        "presenter_identity": "AGENT_F14-04",
+        "tool_identity": "TOOL_F14",
+        "witness_id": "F14-WITNESS-04"
+      },
+      "canonical_decision_payload": {
+        "action": "F14_WRITE",
+        "attempt_id": "F14-ATTEMPT-04",
+        "authority_id": null,
+        "consequence_delta": 0,
+        "decision_id": "F14-DECISION-04",
+        "presenter_identity": "AGENT_F14-04",
+        "reason": "EXECUTION_AUTHORITY_NOT_PRESENT",
+        "tool_identity": "TOOL_F14",
+        "verdict": "REFUSE"
+      },
+      "decision": {
+        "action": "F14_WRITE",
+        "attempt_id": "F14-ATTEMPT-04",
+        "authority_consumed_after": null,
+        "authority_consumed_before": null,
+        "authority_id": null,
+        "authority_issuer_identity": null,
+        "consequence_after": 1,
+        "consequence_before": 1,
+        "consequence_delta": 0,
+        "decision_id": "F14-DECISION-04",
+        "presenter_identity": "AGENT_F14-04",
+        "reason": "EXECUTION_AUTHORITY_NOT_PRESENT",
+        "tool_identity": "TOOL_F14",
+        "verdict": "REFUSE"
+      },
+      "decision_digest": "E01E5C184A0CD95786398B2C860083DD00BE2E98CFD503AC3B4E9EF1D484D734",
+      "witness": {
+        "attempt_id": "F14-ATTEMPT-04",
+        "decision_digest": "E01E5C184A0CD95786398B2C860083DD00BE2E98CFD503AC3B4E9EF1D484D734",
+        "decision_id": "F14-DECISION-04",
+        "witness_id": "F14-WITNESS-04"
+      }
+    },
+    {
+      "attempt": {
+        "action": "F14_WRITE",
+        "attempt_id": "F14-ATTEMPT-05",
+        "attempt_number": 5,
+        "authority_id": "AUTH_F14-05",
+        "decision_id": "F14-DECISION-05",
+        "expected_consequence_delta": 1,
+        "expected_reason": "AUTHORIZED",
+        "expected_verdict": "PERMIT",
+        "presenter_identity": "AGENT_F14-05",
+        "tool_identity": "TOOL_F14",
+        "witness_id": "F14-WITNESS-05"
+      },
+      "canonical_decision_payload": {
+        "action": "F14_WRITE",
+        "attempt_id": "F14-ATTEMPT-05",
+        "authority_id": "AUTH_F14-05",
+        "consequence_delta": 1,
+        "decision_id": "F14-DECISION-05",
+        "presenter_identity": "AGENT_F14-05",
+        "reason": "AUTHORIZED",
+        "tool_identity": "TOOL_F14",
+        "verdict": "PERMIT"
+      },
+      "decision": {
+        "action": "F14_WRITE",
+        "attempt_id": "F14-ATTEMPT-05",
+        "authority_consumed_after": true,
+        "authority_consumed_before": false,
+        "authority_id": "AUTH_F14-05",
+        "authority_issuer_identity": "AUTHORITY_SOURCE_F14",
+        "consequence_after": 4,
+        "consequence_before": 3,
+        "consequence_delta": 1,
+        "decision_id": "F14-DECISION-05",
+        "presenter_identity": "AGENT_F14-05",
+        "reason": "AUTHORIZED",
+        "tool_identity": "TOOL_F14",
+        "verdict": "PERMIT"
+      },
+      "decision_digest": "262F7935AE998DCCDCF90214CD938E7DA17F7B8210DE1489F448F386322E96F1",
+      "witness": {
+        "attempt_id": "F14-ATTEMPT-05",
+        "decision_digest": "262F7935AE998DCCDCF90214CD938E7DA17F7B8210DE1489F448F386322E96F1",
+        "decision_id": "F14-DECISION-05",
+        "witness_id": "F14-WITNESS-05"
+      }
+    },
+    {
+      "attempt": {
+        "action": "F14_WRITE",
+        "attempt_id": "F14-ATTEMPT-06",
+        "attempt_number": 6,
+        "authority_id": null,
+        "decision_id": "F14-DECISION-06",
+        "expected_consequence_delta": 0,
+        "expected_reason": "EXECUTION_AUTHORITY_NOT_PRESENT",
+        "expected_verdict": "REFUSE",
+        "presenter_identity": "AGENT_F14-06",
+        "tool_identity": "TOOL_F14",
+        "witness_id": "F14-WITNESS-06"
+      },
+      "canonical_decision_payload": {
+        "action": "F14_WRITE",
+        "attempt_id": "F14-ATTEMPT-06",
+        "authority_id": null,
+        "consequence_delta": 0,
+        "decision_id": "F14-DECISION-06",
+        "presenter_identity": "AGENT_F14-06",
+        "reason": "EXECUTION_AUTHORITY_NOT_PRESENT",
+        "tool_identity": "TOOL_F14",
+        "verdict": "REFUSE"
+      },
+      "decision": {
+        "action": "F14_WRITE",
+        "attempt_id": "F14-ATTEMPT-06",
+        "authority_consumed_after": null,
+        "authority_consumed_before": null,
+        "authority_id": null,
+        "authority_issuer_identity": null,
+        "consequence_after": 2,
+        "consequence_before": 2,
+        "consequence_delta": 0,
+        "decision_id": "F14-DECISION-06",
+        "presenter_identity": "AGENT_F14-06",
+        "reason": "EXECUTION_AUTHORITY_NOT_PRESENT",
+        "tool_identity": "TOOL_F14",
+        "verdict": "REFUSE"
+      },
+      "decision_digest": "DE2C887F4D7CA31015BE08CBC3F21EA3EE96581179C7F710FF7EF08A5B3EBBAF",
+      "witness": {
+        "attempt_id": "F14-ATTEMPT-06",
+        "decision_digest": "DE2C887F4D7CA31015BE08CBC3F21EA3EE96581179C7F710FF7EF08A5B3EBBAF",
+        "decision_id": "F14-DECISION-06",
+        "witness_id": "F14-WITNESS-06"
+      }
+    },
+    {
+      "attempt": {
+        "action": "F14_WRITE",
+        "attempt_id": "F14-ATTEMPT-07",
+        "attempt_number": 7,
+        "authority_id": "AUTH_F14-07",
+        "decision_id": "F14-DECISION-07",
+        "expected_consequence_delta": 1,
+        "expected_reason": "AUTHORIZED",
+        "expected_verdict": "PERMIT",
+        "presenter_identity": "AGENT_F14-07",
+        "tool_identity": "TOOL_F14",
+        "witness_id": "F14-WITNESS-07"
+      },
+      "canonical_decision_payload": {
+        "action": "F14_WRITE",
+        "attempt_id": "F14-ATTEMPT-07",
+        "authority_id": "AUTH_F14-07",
+        "consequence_delta": 1,
+        "decision_id": "F14-DECISION-07",
+        "presenter_identity": "AGENT_F14-07",
+        "reason": "AUTHORIZED",
+        "tool_identity": "TOOL_F14",
+        "verdict": "PERMIT"
+      },
+      "decision": {
+        "action": "F14_WRITE",
+        "attempt_id": "F14-ATTEMPT-07",
+        "authority_consumed_after": true,
+        "authority_consumed_before": false,
+        "authority_id": "AUTH_F14-07",
+        "authority_issuer_identity": "AUTHORITY_SOURCE_F14",
+        "consequence_after": 2,
+        "consequence_before": 1,
+        "consequence_delta": 1,
+        "decision_id": "F14-DECISION-07",
+        "presenter_identity": "AGENT_F14-07",
+        "reason": "AUTHORIZED",
+        "tool_identity": "TOOL_F14",
+        "verdict": "PERMIT"
+      },
+      "decision_digest": "182A3EA6D98FA0C83C6C397DFB9BC1A84DB171C929B20EDD1EF083D64956C463",
+      "witness": {
+        "attempt_id": "F14-ATTEMPT-07",
+        "decision_digest": "182A3EA6D98FA0C83C6C397DFB9BC1A84DB171C929B20EDD1EF083D64956C463",
+        "decision_id": "F14-DECISION-07",
+        "witness_id": "F14-WITNESS-07"
+      }
+    },
+    {
+      "attempt": {
+        "action": "F14_WRITE",
+        "attempt_id": "F14-ATTEMPT-08",
+        "attempt_number": 8,
+        "authority_id": null,
+        "decision_id": "F14-DECISION-08",
+        "expected_consequence_delta": 0,
+        "expected_reason": "EXECUTION_AUTHORITY_NOT_PRESENT",
+        "expected_verdict": "REFUSE",
+        "presenter_identity": "AGENT_F14-08",
+        "tool_identity": "TOOL_F14",
+        "witness_id": "F14-WITNESS-08"
+      },
+      "canonical_decision_payload": {
+        "action": "F14_WRITE",
+        "attempt_id": "F14-ATTEMPT-08",
+        "authority_id": null,
+        "consequence_delta": 0,
+        "decision_id": "F14-DECISION-08",
+        "presenter_identity": "AGENT_F14-08",
+        "reason": "EXECUTION_AUTHORITY_NOT_PRESENT",
+        "tool_identity": "TOOL_F14",
+        "verdict": "REFUSE"
+      },
+      "decision": {
+        "action": "F14_WRITE",
+        "attempt_id": "F14-ATTEMPT-08",
+        "authority_consumed_after": null,
+        "authority_consumed_before": null,
+        "authority_id": null,
+        "authority_issuer_identity": null,
+        "consequence_after": 2,
+        "consequence_before": 2,
+        "consequence_delta": 0,
+        "decision_id": "F14-DECISION-08",
+        "presenter_identity": "AGENT_F14-08",
+        "reason": "EXECUTION_AUTHORITY_NOT_PRESENT",
+        "tool_identity": "TOOL_F14",
+        "verdict": "REFUSE"
+      },
+      "decision_digest": "ADCEBCB9103325D30EE7C90DF71992FD22E1023FE6D9CB000FF0C4DDA70C4FA0",
+      "witness": {
+        "attempt_id": "F14-ATTEMPT-08",
+        "decision_digest": "ADCEBCB9103325D30EE7C90DF71992FD22E1023FE6D9CB000FF0C4DDA70C4FA0",
+        "decision_id": "F14-DECISION-08",
+        "witness_id": "F14-WITNESS-08"
+      }
+    },
+    {
+      "attempt": {
+        "action": "F14_WRITE",
+        "attempt_id": "F14-ATTEMPT-09",
+        "attempt_number": 9,
+        "authority_id": "AUTH_F14-09",
+        "decision_id": "F14-DECISION-09",
+        "expected_consequence_delta": 1,
+        "expected_reason": "AUTHORIZED",
+        "expected_verdict": "PERMIT",
+        "presenter_identity": "AGENT_F14-09",
+        "tool_identity": "TOOL_F14",
+        "witness_id": "F14-WITNESS-09"
+      },
+      "canonical_decision_payload": {
+        "action": "F14_WRITE",
+        "attempt_id": "F14-ATTEMPT-09",
+        "authority_id": "AUTH_F14-09",
+        "consequence_delta": 1,
+        "decision_id": "F14-DECISION-09",
+        "presenter_identity": "AGENT_F14-09",
+        "reason": "AUTHORIZED",
+        "tool_identity": "TOOL_F14",
+        "verdict": "PERMIT"
+      },
+      "decision": {
+        "action": "F14_WRITE",
+        "attempt_id": "F14-ATTEMPT-09",
+        "authority_consumed_after": true,
+        "authority_consumed_before": false,
+        "authority_id": "AUTH_F14-09",
+        "authority_issuer_identity": "AUTHORITY_SOURCE_F14",
+        "consequence_after": 3,
+        "consequence_before": 2,
+        "consequence_delta": 1,
+        "decision_id": "F14-DECISION-09",
+        "presenter_identity": "AGENT_F14-09",
+        "reason": "AUTHORIZED",
+        "tool_identity": "TOOL_F14",
+        "verdict": "PERMIT"
+      },
+      "decision_digest": "A749194E9F5A28AF33B90BCAE80C19A0B8AEB774089531A67DBFEE6978A04CE0",
+      "witness": {
+        "attempt_id": "F14-ATTEMPT-09",
+        "decision_digest": "A749194E9F5A28AF33B90BCAE80C19A0B8AEB774089531A67DBFEE6978A04CE0",
+        "decision_id": "F14-DECISION-09",
+        "witness_id": "F14-WITNESS-09"
+      }
+    },
+    {
+      "attempt": {
+        "action": "F14_WRITE",
+        "attempt_id": "F14-ATTEMPT-10",
+        "attempt_number": 10,
+        "authority_id": null,
+        "decision_id": "F14-DECISION-10",
+        "expected_consequence_delta": 0,
+        "expected_reason": "EXECUTION_AUTHORITY_NOT_PRESENT",
+        "expected_verdict": "REFUSE",
+        "presenter_identity": "AGENT_F14-10",
+        "tool_identity": "TOOL_F14",
+        "witness_id": "F14-WITNESS-10"
+      },
+      "canonical_decision_payload": {
+        "action": "F14_WRITE",
+        "attempt_id": "F14-ATTEMPT-10",
+        "authority_id": null,
+        "consequence_delta": 0,
+        "decision_id": "F14-DECISION-10",
+        "presenter_identity": "AGENT_F14-10",
+        "reason": "EXECUTION_AUTHORITY_NOT_PRESENT",
+        "tool_identity": "TOOL_F14",
+        "verdict": "REFUSE"
+      },
+      "decision": {
+        "action": "F14_WRITE",
+        "attempt_id": "F14-ATTEMPT-10",
+        "authority_consumed_after": null,
+        "authority_consumed_before": null,
+        "authority_id": null,
+        "authority_issuer_identity": null,
+        "consequence_after": 0,
+        "consequence_before": 0,
+        "consequence_delta": 0,
+        "decision_id": "F14-DECISION-10",
+        "presenter_identity": "AGENT_F14-10",
+        "reason": "EXECUTION_AUTHORITY_NOT_PRESENT",
+        "tool_identity": "TOOL_F14",
+        "verdict": "REFUSE"
+      },
+      "decision_digest": "66FF346655873FE9FE79E7FCBFACAF4ADB94F464B6A07792A444FA3C75F94826",
+      "witness": {
+        "attempt_id": "F14-ATTEMPT-10",
+        "decision_digest": "66FF346655873FE9FE79E7FCBFACAF4ADB94F464B6A07792A444FA3C75F94826",
+        "decision_id": "F14-DECISION-10",
+        "witness_id": "F14-WITNESS-10"
+      }
+    },
+    {
+      "attempt": {
+        "action": "F14_WRITE",
+        "attempt_id": "F14-ATTEMPT-11",
+        "attempt_number": 11,
+        "authority_id": "AUTH_F14-11",
+        "decision_id": "F14-DECISION-11",
+        "expected_consequence_delta": 1,
+        "expected_reason": "AUTHORIZED",
+        "expected_verdict": "PERMIT",
+        "presenter_identity": "AGENT_F14-11",
+        "tool_identity": "TOOL_F14",
+        "witness_id": "F14-WITNESS-11"
+      },
+      "canonical_decision_payload": {
+        "action": "F14_WRITE",
+        "attempt_id": "F14-ATTEMPT-11",
+        "authority_id": "AUTH_F14-11",
+        "consequence_delta": 1,
+        "decision_id": "F14-DECISION-11",
+        "presenter_identity": "AGENT_F14-11",
+        "reason": "AUTHORIZED",
+        "tool_identity": "TOOL_F14",
+        "verdict": "PERMIT"
+      },
+      "decision": {
+        "action": "F14_WRITE",
+        "attempt_id": "F14-ATTEMPT-11",
+        "authority_consumed_after": true,
+        "authority_consumed_before": false,
+        "authority_id": "AUTH_F14-11",
+        "authority_issuer_identity": "AUTHORITY_SOURCE_F14",
+        "consequence_after": 5,
+        "consequence_before": 4,
+        "consequence_delta": 1,
+        "decision_id": "F14-DECISION-11",
+        "presenter_identity": "AGENT_F14-11",
+        "reason": "AUTHORIZED",
+        "tool_identity": "TOOL_F14",
+        "verdict": "PERMIT"
+      },
+      "decision_digest": "EE98C8B05A16223592603902203EDCCC6B91DB0D644CCE0EFB2EF17A773D70FA",
+      "witness": {
+        "attempt_id": "F14-ATTEMPT-11",
+        "decision_digest": "EE98C8B05A16223592603902203EDCCC6B91DB0D644CCE0EFB2EF17A773D70FA",
+        "decision_id": "F14-DECISION-11",
+        "witness_id": "F14-WITNESS-11"
+      }
+    },
+    {
+      "attempt": {
+        "action": "F14_WRITE",
+        "attempt_id": "F14-ATTEMPT-12",
+        "attempt_number": 12,
+        "authority_id": null,
+        "decision_id": "F14-DECISION-12",
+        "expected_consequence_delta": 0,
+        "expected_reason": "EXECUTION_AUTHORITY_NOT_PRESENT",
+        "expected_verdict": "REFUSE",
+        "presenter_identity": "AGENT_F14-12",
+        "tool_identity": "TOOL_F14",
+        "witness_id": "F14-WITNESS-12"
+      },
+      "canonical_decision_payload": {
+        "action": "F14_WRITE",
+        "attempt_id": "F14-ATTEMPT-12",
+        "authority_id": null,
+        "consequence_delta": 0,
+        "decision_id": "F14-DECISION-12",
+        "presenter_identity": "AGENT_F14-12",
+        "reason": "EXECUTION_AUTHORITY_NOT_PRESENT",
+        "tool_identity": "TOOL_F14",
+        "verdict": "REFUSE"
+      },
+      "decision": {
+        "action": "F14_WRITE",
+        "attempt_id": "F14-ATTEMPT-12",
+        "authority_consumed_after": null,
+        "authority_consumed_before": null,
+        "authority_id": null,
+        "authority_issuer_identity": null,
+        "consequence_after": 5,
+        "consequence_before": 5,
+        "consequence_delta": 0,
+        "decision_id": "F14-DECISION-12",
+        "presenter_identity": "AGENT_F14-12",
+        "reason": "EXECUTION_AUTHORITY_NOT_PRESENT",
+        "tool_identity": "TOOL_F14",
+        "verdict": "REFUSE"
+      },
+      "decision_digest": "807E7881C3C3922C1EC05785FB20AF666EC1823E32B939512A9B2807B1A1E571",
+      "witness": {
+        "attempt_id": "F14-ATTEMPT-12",
+        "decision_digest": "807E7881C3C3922C1EC05785FB20AF666EC1823E32B939512A9B2807B1A1E571",
+        "decision_id": "F14-DECISION-12",
+        "witness_id": "F14-WITNESS-12"
+      }
+    }
+  ],
+  "start_release": true,
+  "submitted_count": 12,
+  "tool_final_counter": 6,
+  "unique_attempt_count": 12,
+  "unique_decision_count": 12,
+  "unique_witness_count": 12,
+  "witness_receipt_count": 12,
+  "worker_exception_count": 0,
+  "worker_exceptions": [],
+  "workers_expected": 12,
+  "workers_ready_before_release": 12
+}
