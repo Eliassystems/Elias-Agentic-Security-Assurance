@@ -1,0 +1,33 @@
+{
+  "action": "F10_PRIVILEGED_WRITE",
+  "authority_consumed_after": true,
+  "authority_consumed_before": false,
+  "authority_epoch": 2,
+  "authority_epoch_revoked": false,
+  "authority_id": "AUTH_F10_PEER_A",
+  "authority_subject_identity": "AGENT_A",
+  "authority_tool_identity": "TOOL_F10_PEER",
+  "case": "POST_ATTACK_PEER_INTEGRITY_POSITIVE",
+  "consequence_after": 1,
+  "consequence_before": 0,
+  "consequence_delta": 1,
+  "governing_current_epoch": 2,
+  "observation_time_utc": "2026-09-18T11:03:49.590242+00:00",
+  "peer_authority_final": {
+    "authority_epoch": 2,
+    "authority_id": "AUTH_F10_PEER_A",
+    "authorized_actions": [
+      "F10_PRIVILEGED_WRITE"
+    ],
+    "bound_tool_identity": "TOOL_F10_PEER",
+    "consumed": true,
+    "subject_identity": "AGENT_A",
+    "valid": true
+  },
+  "presenter_identity": "AGENT_A",
+  "reason": "AUTHORIZED",
+  "same_runtime_authority_object_as_borrowed_attack": true,
+  "target_tool_identity": "TOOL_F10_PEER",
+  "test_id": "EASA-F10-PEER-POS-001",
+  "verdict": "PERMIT"
+}

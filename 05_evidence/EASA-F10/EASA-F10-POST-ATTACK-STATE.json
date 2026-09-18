@@ -1,0 +1,62 @@
+{
+  "authorities": {
+    "low": {
+      "authority_epoch": 2,
+      "authority_id": "AUTH_F10_X_LOW_E2",
+      "authorized_actions": [
+        "F10_PRIVILEGED_WRITE"
+      ],
+      "bound_tool_identity": "TOOL_F10_LOW",
+      "consumed": false,
+      "subject_identity": "AGENT_X",
+      "valid": true
+    },
+    "peer": {
+      "authority_epoch": 2,
+      "authority_id": "AUTH_F10_PEER_A",
+      "authorized_actions": [
+        "F10_PRIVILEGED_WRITE"
+      ],
+      "bound_tool_identity": "TOOL_F10_PEER",
+      "consumed": false,
+      "subject_identity": "AGENT_A",
+      "valid": true
+    },
+    "stale": {
+      "authority_epoch": 1,
+      "authority_id": "AUTH_F10_X_STALE_E1",
+      "authorized_actions": [
+        "F10_PRIVILEGED_WRITE"
+      ],
+      "bound_tool_identity": "TOOL_F10_LOW",
+      "consumed": false,
+      "subject_identity": "AGENT_X",
+      "valid": true
+    }
+  },
+  "examination": "EASA-F10",
+  "governance": {
+    "current_epoch": 2,
+    "revoked_epochs": [
+      1
+    ]
+  },
+  "observation_time_utc": "2026-09-18T11:03:49.590242+00:00",
+  "record_type": "POST_ATTACK_PRE_POSITIVE_STATE",
+  "same_low_runtime_object": true,
+  "same_peer_runtime_object": true,
+  "tools": {
+    "HIGH": {
+      "consequence_counter": 0,
+      "tool_identity": "TOOL_F10_HIGH"
+    },
+    "LOW": {
+      "consequence_counter": 0,
+      "tool_identity": "TOOL_F10_LOW"
+    },
+    "PEER": {
+      "consequence_counter": 0,
+      "tool_identity": "TOOL_F10_PEER"
+    }
+  }
+}

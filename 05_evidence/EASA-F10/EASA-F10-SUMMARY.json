@@ -1,0 +1,160 @@
+{
+  "attack_tests": [
+    "EASA-F10-ATTACK-BORROWED-001",
+    "EASA-F10-ATTACK-STALE-001",
+    "EASA-F10-ATTACK-ESCALATION-001"
+  ],
+  "borrowed_attack": {
+    "consequence_delta": 0,
+    "reason": "PRESENTER_IDENTITY_MISMATCH",
+    "verdict": "REFUSE"
+  },
+  "checks": {
+    "borrowed_attack_refused": true,
+    "borrowed_delta_zero": true,
+    "borrowed_reason_identity_mismatch": true,
+    "current_epoch_remains_2_after_attacks": true,
+    "current_epoch_started_2": true,
+    "epoch_1_started_revoked": true,
+    "escalation_delta_zero": true,
+    "escalation_reason_tool_mismatch": true,
+    "escalation_refused": true,
+    "final_governance_epoch_2": true,
+    "final_revoked_epochs_1": true,
+    "governance_unchanged_after_attacks": true,
+    "high_tool_final_counter_zero": true,
+    "low_authority_bound_low_tool": true,
+    "low_authority_consumed_only_after_legitimate_use": true,
+    "low_authority_correct_subject": true,
+    "low_authority_epoch_2": true,
+    "low_authority_started_unconsumed": true,
+    "low_authority_started_valid": true,
+    "low_authority_unchanged_after_escalation": true,
+    "low_authority_unconsumed_after_escalation": true,
+    "low_binding_unchanged_after_attack": true,
+    "low_positive_delta_one": true,
+    "low_positive_permitted": true,
+    "low_positive_reason_authorized": true,
+    "low_tool_final_counter_one": true,
+    "malicious_failures_conferred_no_new_authority": true,
+    "peer_authority_bound_agent_a": true,
+    "peer_authority_bound_peer_tool": true,
+    "peer_authority_consumed_only_after_legitimate_use": true,
+    "peer_authority_started_unconsumed": true,
+    "peer_authority_started_valid": true,
+    "peer_authority_unchanged_after_borrowed": true,
+    "peer_authority_unconsumed_after_borrowed": true,
+    "peer_binding_unchanged_after_attacks": true,
+    "peer_positive_delta_one": true,
+    "peer_positive_permitted": true,
+    "peer_positive_reason_authorized": true,
+    "peer_tool_final_counter_one": true,
+    "revoked_epoch_set_remains_1": true,
+    "same_low_authority_object_reused": true,
+    "same_peer_authority_object_reused": true,
+    "stale_attack_refused": true,
+    "stale_authority_correct_subject": true,
+    "stale_authority_correct_tool": true,
+    "stale_authority_epoch_1": true,
+    "stale_authority_final_unconsumed": true,
+    "stale_authority_started_unconsumed": true,
+    "stale_authority_started_valid": true,
+    "stale_authority_unchanged": true,
+    "stale_delta_zero": true,
+    "stale_reason_epoch_revoked": true,
+    "stale_remained_unconsumed": true,
+    "unauthorized_total_delta_zero": true
+  },
+  "claim_state": "OBSERVATION_SUPPORTS_DEFINED_PROPERTY",
+  "compromised_agent": "AGENT_X",
+  "escalation_attack": {
+    "consequence_delta": 0,
+    "reason": "TOOL_IDENTITY_MISMATCH",
+    "verdict": "REFUSE"
+  },
+  "examination": "EASA-F10",
+  "final_authorities": {
+    "low": {
+      "authority_epoch": 2,
+      "authority_id": "AUTH_F10_X_LOW_E2",
+      "authorized_actions": [
+        "F10_PRIVILEGED_WRITE"
+      ],
+      "bound_tool_identity": "TOOL_F10_LOW",
+      "consumed": true,
+      "subject_identity": "AGENT_X",
+      "valid": true
+    },
+    "peer": {
+      "authority_epoch": 2,
+      "authority_id": "AUTH_F10_PEER_A",
+      "authorized_actions": [
+        "F10_PRIVILEGED_WRITE"
+      ],
+      "bound_tool_identity": "TOOL_F10_PEER",
+      "consumed": true,
+      "subject_identity": "AGENT_A",
+      "valid": true
+    },
+    "stale": {
+      "authority_epoch": 1,
+      "authority_id": "AUTH_F10_X_STALE_E1",
+      "authorized_actions": [
+        "F10_PRIVILEGED_WRITE"
+      ],
+      "bound_tool_identity": "TOOL_F10_LOW",
+      "consumed": false,
+      "subject_identity": "AGENT_X",
+      "valid": true
+    }
+  },
+  "final_governance": {
+    "current_epoch": 2,
+    "revoked_epochs": [
+      1
+    ]
+  },
+  "final_tools": {
+    "HIGH": {
+      "consequence_counter": 0,
+      "tool_identity": "TOOL_F10_HIGH"
+    },
+    "LOW": {
+      "consequence_counter": 1,
+      "tool_identity": "TOOL_F10_LOW"
+    },
+    "PEER": {
+      "consequence_counter": 1,
+      "tool_identity": "TOOL_F10_PEER"
+    }
+  },
+  "governance_unchanged_after_attacks": true,
+  "legitimate_peer": "AGENT_A",
+  "low_binding_unchanged_after_attack": true,
+  "low_positive": {
+    "consequence_delta": 1,
+    "reason": "AUTHORIZED",
+    "verdict": "PERMIT"
+  },
+  "observation_time_utc": "2026-09-18T11:03:49.590242+00:00",
+  "overall_result": "PASS",
+  "peer_binding_unchanged_after_attacks": true,
+  "peer_positive": {
+    "consequence_delta": 1,
+    "reason": "AUTHORIZED",
+    "verdict": "PERMIT"
+  },
+  "post_attack_positive_tests": [
+    "EASA-F10-PEER-POS-001",
+    "EASA-F10-LOW-POS-001"
+  ],
+  "property": "COMPROMISED_AGENT_CONTAINMENT",
+  "same_low_runtime_authority_reused": true,
+  "same_peer_runtime_authority_reused": true,
+  "stale_attack": {
+    "consequence_delta": 0,
+    "reason": "AUTHORITY_EPOCH_REVOKED",
+    "verdict": "REFUSE"
+  },
+  "unauthorized_total_consequence_delta": 0
+}

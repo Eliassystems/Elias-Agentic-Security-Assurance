@@ -1,0 +1,33 @@
+{
+  "action": "F10_PRIVILEGED_WRITE",
+  "authority_consumed_after": true,
+  "authority_consumed_before": false,
+  "authority_epoch": 2,
+  "authority_epoch_revoked": false,
+  "authority_id": "AUTH_F10_X_LOW_E2",
+  "authority_subject_identity": "AGENT_X",
+  "authority_tool_identity": "TOOL_F10_LOW",
+  "case": "POST_ATTACK_LOW_BOUNDARY_POSITIVE",
+  "consequence_after": 1,
+  "consequence_before": 0,
+  "consequence_delta": 1,
+  "governing_current_epoch": 2,
+  "low_authority_final": {
+    "authority_epoch": 2,
+    "authority_id": "AUTH_F10_X_LOW_E2",
+    "authorized_actions": [
+      "F10_PRIVILEGED_WRITE"
+    ],
+    "bound_tool_identity": "TOOL_F10_LOW",
+    "consumed": true,
+    "subject_identity": "AGENT_X",
+    "valid": true
+  },
+  "observation_time_utc": "2026-09-18T11:03:49.590242+00:00",
+  "presenter_identity": "AGENT_X",
+  "reason": "AUTHORIZED",
+  "same_runtime_authority_object_as_escalation_attack": true,
+  "target_tool_identity": "TOOL_F10_LOW",
+  "test_id": "EASA-F10-LOW-POS-001",
+  "verdict": "PERMIT"
+}

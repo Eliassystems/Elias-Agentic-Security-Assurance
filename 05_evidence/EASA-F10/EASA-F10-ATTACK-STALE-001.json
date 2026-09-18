@@ -1,0 +1,44 @@
+{
+  "action": "F10_PRIVILEGED_WRITE",
+  "attack_path": "SUPERSEDED_EPOCH_AUTHORITY",
+  "authority_after": {
+    "authority_epoch": 1,
+    "authority_id": "AUTH_F10_X_STALE_E1",
+    "authorized_actions": [
+      "F10_PRIVILEGED_WRITE"
+    ],
+    "bound_tool_identity": "TOOL_F10_LOW",
+    "consumed": false,
+    "subject_identity": "AGENT_X",
+    "valid": true
+  },
+  "authority_before": {
+    "authority_epoch": 1,
+    "authority_id": "AUTH_F10_X_STALE_E1",
+    "authorized_actions": [
+      "F10_PRIVILEGED_WRITE"
+    ],
+    "bound_tool_identity": "TOOL_F10_LOW",
+    "consumed": false,
+    "subject_identity": "AGENT_X",
+    "valid": true
+  },
+  "authority_consumed_after": false,
+  "authority_consumed_before": false,
+  "authority_epoch": 1,
+  "authority_epoch_revoked": true,
+  "authority_id": "AUTH_F10_X_STALE_E1",
+  "authority_subject_identity": "AGENT_X",
+  "authority_tool_identity": "TOOL_F10_LOW",
+  "authority_unchanged": true,
+  "consequence_after": 0,
+  "consequence_before": 0,
+  "consequence_delta": 0,
+  "governing_current_epoch": 2,
+  "observation_time_utc": "2026-09-18T11:03:49.590242+00:00",
+  "presenter_identity": "AGENT_X",
+  "reason": "AUTHORITY_EPOCH_REVOKED",
+  "target_tool_identity": "TOOL_F10_LOW",
+  "test_id": "EASA-F10-ATTACK-STALE-001",
+  "verdict": "REFUSE"
+}

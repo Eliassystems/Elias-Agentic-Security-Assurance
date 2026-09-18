@@ -1,0 +1,47 @@
+{
+  "action": "F10_PRIVILEGED_WRITE",
+  "attack_path": "BORROWED_PEER_AUTHORITY",
+  "authority_consumed_after": false,
+  "authority_consumed_before": false,
+  "authority_epoch": 2,
+  "authority_epoch_revoked": false,
+  "authority_id": "AUTH_F10_PEER_A",
+  "authority_owner": "AGENT_A",
+  "authority_subject_identity": "AGENT_A",
+  "authority_tool_identity": "TOOL_F10_PEER",
+  "compromised_agent": "AGENT_X",
+  "consequence_after": 0,
+  "consequence_before": 0,
+  "consequence_delta": 0,
+  "governing_current_epoch": 2,
+  "observation_time_utc": "2026-09-18T11:03:49.590242+00:00",
+  "peer_authority_after": {
+    "authority_epoch": 2,
+    "authority_id": "AUTH_F10_PEER_A",
+    "authorized_actions": [
+      "F10_PRIVILEGED_WRITE"
+    ],
+    "bound_tool_identity": "TOOL_F10_PEER",
+    "consumed": false,
+    "subject_identity": "AGENT_A",
+    "valid": true
+  },
+  "peer_authority_before": {
+    "authority_epoch": 2,
+    "authority_id": "AUTH_F10_PEER_A",
+    "authorized_actions": [
+      "F10_PRIVILEGED_WRITE"
+    ],
+    "bound_tool_identity": "TOOL_F10_PEER",
+    "consumed": false,
+    "subject_identity": "AGENT_A",
+    "valid": true
+  },
+  "peer_authority_unchanged": true,
+  "presenter_identity": "AGENT_X",
+  "reason": "PRESENTER_IDENTITY_MISMATCH",
+  "same_authority_reserved_for_peer_positive": true,
+  "target_tool_identity": "TOOL_F10_PEER",
+  "test_id": "EASA-F10-ATTACK-BORROWED-001",
+  "verdict": "REFUSE"
+}
