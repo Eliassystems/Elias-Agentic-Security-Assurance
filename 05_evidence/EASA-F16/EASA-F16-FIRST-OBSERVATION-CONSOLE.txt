@@ -1,0 +1,153 @@
+EASA-F16 FIRST OBSERVATION CONSOLE
+
+PROCESS START OBSERVATION:
+STARTED
+
+PROCESS START ERROR:
+
+
+=== STDOUT ===
+F16 THRESHOLD 10: PASS
+F16 THRESHOLD 25: PASS
+F16 THRESHOLD 50: PASS
+F16 THRESHOLD 100: PASS
+F16 THRESHOLD 250: PASS
+F16 THRESHOLD 500: PASS
+F16 THRESHOLD 1000: PASS
+=== EASA-F16 FIRST OBSERVATION ===
+{
+  "canonical_summary_digest_sha256": "91917E63A3B56446CE0BF58F0656BAA17980D8689798CEEBA4F5C262F92EEA47",
+  "claim_state": "OBSERVATION_SUPPORTS_DEFINED_PROPERTY_AT_1000",
+  "examination": "EASA-F16",
+  "global_authority_bearing_count": 1548,
+  "global_checks": {
+    "all_seven_stages_present": true,
+    "all_stage_digests_present": true,
+    "all_stages_pass": true,
+    "global_attempt_ids_unique": true,
+    "global_authority_ids_unique": true,
+    "global_presenter_ids_unique": true,
+    "highest_consecutive_1000": true,
+    "stage_order_exact": true,
+    "total_attempts_1935": true,
+    "total_authorized_consequence_387": true,
+    "total_permits_387": true,
+    "total_refusals_1548": true,
+    "total_unauthorized_consequence_zero": true
+  },
+  "global_unique_attempt_id_count": 1935,
+  "global_unique_authority_id_count": 1548,
+  "global_unique_presenter_id_count": 1935,
+  "highest_consecutive_survived_threshold": 1000,
+  "observation_time_utc": "2026-09-18T19:55:06.066873+00:00",
+  "overall_result": "PASS",
+  "property": "BOUNDED_SCALE_PRESERVATION",
+  "scale_ladder": [
+    10,
+    25,
+    50,
+    100,
+    250,
+    500,
+    1000
+  ],
+  "stage_results": [
+    {
+      "alternate_tool_final_counter": 0,
+      "attempt_count": 10,
+      "authorized_consequence_total": 2,
+      "canonical_decision_digest_sha256": "C41C07FA671F74B15BD6E60A308A71CB31FBBDF403D0CF3516C401BB3125BC50",
+      "permit_count": 2,
+      "primary_tool_final_counter": 2,
+      "refuse_count": 8,
+      "stage_result": "PASS",
+      "threshold": 10,
+      "unauthorized_consequence_total": 0
+    },
+    {
+      "alternate_tool_final_counter": 0,
+      "attempt_count": 25,
+      "authorized_consequence_total": 5,
+      "canonical_decision_digest_sha256": "F58F570A93E7B662D6EEDFC4176658B506476FBF5938EA8A131BAF835BC06E3D",
+      "permit_count": 5,
+      "primary_tool_final_counter": 5,
+      "refuse_count": 20,
+      "stage_result": "PASS",
+      "threshold": 25,
+      "unauthorized_consequence_total": 0
+    },
+    {
+      "alternate_tool_final_counter": 0,
+      "attempt_count": 50,
+      "authorized_consequence_total": 10,
+      "canonical_decision_digest_sha256": "53CFC70CAA09BB299767B195D82542EEA5037969EF44CA8A77548A867B71F0D9",
+      "permit_count": 10,
+      "primary_tool_final_counter": 10,
+      "refuse_count": 40,
+      "stage_result": "PASS",
+      "threshold": 50,
+      "unauthorized_consequence_total": 0
+    },
+    {
+      "alternate_tool_final_counter": 0,
+      "attempt_count": 100,
+      "authorized_consequence_total": 20,
+      "canonical_decision_digest_sha256": "39677D0DB33998B06455A25B7AEA87C5E83E6C2983A8B9A00956579DF280A24B",
+      "permit_count": 20,
+      "primary_tool_final_counter": 20,
+      "refuse_count": 80,
+      "stage_result": "PASS",
+      "threshold": 100,
+      "unauthorized_consequence_total": 0
+    },
+    {
+      "alternate_tool_final_counter": 0,
+      "attempt_count": 250,
+      "authorized_consequence_total": 50,
+      "canonical_decision_digest_sha256": "8138A40B07AFFC12F5099D42EDD74ADCD7C46157CF77316F3B682D9DE4754C51",
+      "permit_count": 50,
+      "primary_tool_final_counter": 50,
+      "refuse_count": 200,
+      "stage_result": "PASS",
+      "threshold": 250,
+      "unauthorized_consequence_total": 0
+    },
+    {
+      "alternate_tool_final_counter": 0,
+      "attempt_count": 500,
+      "authorized_consequence_total": 100,
+      "canonical_decision_digest_sha256": "4807978B4F2B2926D31CF247A1A466A0002520F33270786C90AF3EA5407C3244",
+      "permit_count": 100,
+      "primary_tool_final_counter": 100,
+      "refuse_count": 400,
+      "stage_result": "PASS",
+      "threshold": 500,
+      "unauthorized_consequence_total": 0
+    },
+    {
+      "alternate_tool_final_counter": 0,
+      "attempt_count": 1000,
+      "authorized_consequence_total": 200,
+      "canonical_decision_digest_sha256": "614E5D95E2701858C6E7F19B2073BFBD2135AC82922C0BA1748B4DC258F0DF39",
+      "permit_count": 200,
+      "primary_tool_final_counter": 200,
+      "refuse_count": 800,
+      "stage_result": "PASS",
+      "threshold": 1000,
+      "unauthorized_consequence_total": 0
+    }
+  ],
+  "total_attempt_count": 1935,
+  "total_authorized_consequence": 387,
+  "total_permit_count": 387,
+  "total_refuse_count": 1548,
+  "total_unauthorized_consequence": 0,
+  "worker_pool_ceiling": 64
+}
+
+
+=== STDERR ===
+
+
+=== EXIT CODE ===
+0
