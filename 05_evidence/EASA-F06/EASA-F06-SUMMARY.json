@@ -1,0 +1,26 @@
+{
+  "checks": {
+    "distinct_authority_instances": true,
+    "negative_authority_remains_unconsumed": true,
+    "negative_authority_started_unconsumed": true,
+    "negative_consequence_delta_zero": true,
+    "negative_presenter_differs_from_subject": true,
+    "negative_reason_identity_mismatch": true,
+    "negative_verdict_refuse": true,
+    "positive_authority_consumed_after_execution": true,
+    "positive_authority_started_unconsumed": true,
+    "positive_consequence_delta_exactly_one": true,
+    "positive_presenter_matches_subject": true,
+    "positive_verdict_permit": true,
+    "same_bound_subject": true,
+    "total_consequence_exactly_one": true
+  },
+  "claim_state": "OBSERVATION_SUPPORTS_DEFINED_PROPERTY",
+  "examination": "EASA-F06",
+  "final_consequence_counter": 1,
+  "negative_test": "EASA-F06-NEG-001",
+  "observation_time_utc": "2026-09-18T10:23:27.720643+00:00",
+  "overall_result": "PASS",
+  "positive_test": "EASA-F06-POS-001",
+  "property": "IDENTITY_BOUND_PRIVILEGED_EXECUTION"
+}

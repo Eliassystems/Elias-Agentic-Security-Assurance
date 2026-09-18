@@ -1,0 +1,21 @@
+{
+  "action": "PRIVILEGED_WRITE",
+  "authority_consumed_after": false,
+  "authority_consumed_before": false,
+  "authority_governing_state_valid_before": true,
+  "authority_id": "AUTH_F06_NEG",
+  "authority_subject_identity": "AGENT_A",
+  "authority_valid_before": true,
+  "authorized_actions": [
+    "PRIVILEGED_WRITE"
+  ],
+  "case": "PRESENTER_SUBSTITUTION",
+  "consequence_after": 1,
+  "consequence_before": 1,
+  "consequence_delta": 0,
+  "observation_time_utc": "2026-09-18T10:23:27.720643+00:00",
+  "presenter_identity": "AGENT_B",
+  "reason": "PRESENTER_IDENTITY_MISMATCH",
+  "test_id": "EASA-F06-NEG-001",
+  "verdict": "REFUSE"
+}
