@@ -1,0 +1,32 @@
+{
+  "examination": "EASA-F17",
+  "property": "COMPOSITE_ADVERSARIAL_MULTI_AGENT_BOUNDARY_PRESERVATION",
+  "transitions": [
+    {
+      "after": {
+        "admissible": false,
+        "epoch": 2,
+        "state": "WITHDRAWN"
+      },
+      "before": {
+        "admissible": true,
+        "epoch": 1,
+        "state": "READY"
+      },
+      "transition": "EPOCH_1_TO_EPOCH_2"
+    },
+    {
+      "after": {
+        "admissible": true,
+        "epoch": 3,
+        "state": "READY"
+      },
+      "before": {
+        "admissible": false,
+        "epoch": 2,
+        "state": "WITHDRAWN"
+      },
+      "transition": "EPOCH_2_TO_EPOCH_3"
+    }
+  ]
+}
