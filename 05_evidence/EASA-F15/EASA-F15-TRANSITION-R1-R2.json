@@ -1,0 +1,22 @@
+{
+  "examination": "EASA-F15",
+  "historical_cache": {
+    "admissible": true,
+    "state": "READY",
+    "state_version": "R1"
+  },
+  "stage": "F15-S2",
+  "transition": {
+    "after": {
+      "admissible": false,
+      "state": "WITHDRAWN",
+      "state_version": "R2"
+    },
+    "before": {
+      "admissible": true,
+      "state": "READY",
+      "state_version": "R1"
+    },
+    "source_identity": "STATE_SOURCE_F15"
+  }
+}

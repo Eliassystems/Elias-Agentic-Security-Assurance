@@ -1,0 +1,42 @@
+{
+  "authority_after": {
+    "authority_id": "AUTH_F15-RECOVERY",
+    "authorized_action": "F15_PARTITION_SENSITIVE_WRITE",
+    "bound_tool_identity": "TOOL_F15",
+    "consumed": true,
+    "subject_identity": "AGENT_F15",
+    "valid": true
+  },
+  "decision": {
+    "action": "F15_PARTITION_SENSITIVE_WRITE",
+    "attempt_id": "F15-ATTEMPT-RECOVERY",
+    "authoritative_admissibility": true,
+    "authoritative_state": "READY",
+    "authoritative_state_version": "R3",
+    "authority_consumed_after": true,
+    "authority_consumed_before": false,
+    "authority_id": "AUTH_F15-RECOVERY",
+    "authority_valid": true,
+    "cached_admissibility": null,
+    "cached_state": null,
+    "cached_state_version": null,
+    "consequence_after": 2,
+    "consequence_before": 1,
+    "consequence_delta": 1,
+    "presenter_identity": "AGENT_F15",
+    "reason": "AUTHORIZED",
+    "resolution_status": "CURRENT_CONSISTENT_ADMISSIBLE",
+    "resolver_a_admissibility": true,
+    "resolver_a_availability": true,
+    "resolver_a_state": "READY",
+    "resolver_a_state_version": "R3",
+    "resolver_b_admissibility": true,
+    "resolver_b_availability": true,
+    "resolver_b_state": "READY",
+    "resolver_b_state_version": "R3",
+    "tool_identity": "TOOL_F15",
+    "verdict": "PERMIT"
+  },
+  "examination": "EASA-F15",
+  "stage": "F15-S6-POSITIVE"
+}

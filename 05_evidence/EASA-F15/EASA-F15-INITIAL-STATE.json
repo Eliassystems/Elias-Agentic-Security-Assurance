@@ -1,0 +1,29 @@
+{
+  "action": "F15_PARTITION_SENSITIVE_WRITE",
+  "authoritative_source_identity": "STATE_SOURCE_F15",
+  "authoritative_state": {
+    "admissible": true,
+    "state": "READY",
+    "state_version": "R1"
+  },
+  "examination": "EASA-F15",
+  "observation_time_utc": "2026-09-18T19:44:39.179411+00:00",
+  "presenter_identity": "AGENT_F15",
+  "resolver_a": {
+    "admissible": true,
+    "available": true,
+    "resolver_identity": "RESOLVER_F15_A",
+    "state": "READY",
+    "state_version": "R1"
+  },
+  "resolver_b": {
+    "admissible": true,
+    "available": true,
+    "resolver_identity": "RESOLVER_F15_B",
+    "state": "READY",
+    "state_version": "R1"
+  },
+  "stage": "F15-S0",
+  "tool_counter": 0,
+  "tool_identity": "TOOL_F15"
+}

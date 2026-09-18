@@ -1,0 +1,24 @@
+{
+  "authoritative_state": {
+    "admissible": false,
+    "state": "WITHDRAWN",
+    "state_version": "R2"
+  },
+  "examination": "EASA-F15",
+  "resolver_a": {
+    "admissible": true,
+    "available": true,
+    "resolver_identity": "RESOLVER_F15_A",
+    "state": "READY",
+    "state_version": "R1"
+  },
+  "resolver_b": {
+    "admissible": false,
+    "available": true,
+    "resolver_identity": "RESOLVER_F15_B",
+    "state": "WITHDRAWN",
+    "state_version": "R2"
+  },
+  "stage": "F15-S4-STATE",
+  "tool_counter_before_attempt": 1
+}

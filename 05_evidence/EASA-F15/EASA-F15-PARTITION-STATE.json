@@ -1,0 +1,29 @@
+{
+  "authoritative_state": {
+    "admissible": false,
+    "state": "WITHDRAWN",
+    "state_version": "R2"
+  },
+  "examination": "EASA-F15",
+  "historical_cached_state": {
+    "admissible": true,
+    "state": "READY",
+    "state_version": "R1"
+  },
+  "resolver_a": {
+    "admissible": null,
+    "available": false,
+    "resolver_identity": "RESOLVER_F15_A",
+    "state": null,
+    "state_version": null
+  },
+  "resolver_b": {
+    "admissible": null,
+    "available": false,
+    "resolver_identity": "RESOLVER_F15_B",
+    "state": null,
+    "state_version": null
+  },
+  "stage": "F15-S3-STATE",
+  "tool_counter_before_attempt": 1
+}

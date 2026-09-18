@@ -1,0 +1,17 @@
+{
+  "examination": "EASA-F15",
+  "stage": "F15-S6-TRANSITION",
+  "transition": {
+    "after": {
+      "admissible": true,
+      "state": "READY",
+      "state_version": "R3"
+    },
+    "before": {
+      "admissible": false,
+      "state": "WITHDRAWN",
+      "state_version": "R2"
+    },
+    "source_identity": "STATE_SOURCE_F15"
+  }
+}

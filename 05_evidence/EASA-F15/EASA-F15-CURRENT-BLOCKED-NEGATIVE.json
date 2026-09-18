@@ -1,0 +1,42 @@
+{
+  "authority_after": {
+    "authority_id": "AUTH_F15-CURRENT-BLOCKED",
+    "authorized_action": "F15_PARTITION_SENSITIVE_WRITE",
+    "bound_tool_identity": "TOOL_F15",
+    "consumed": false,
+    "subject_identity": "AGENT_F15",
+    "valid": true
+  },
+  "decision": {
+    "action": "F15_PARTITION_SENSITIVE_WRITE",
+    "attempt_id": "F15-ATTEMPT-CURRENT-BLOCKED",
+    "authoritative_admissibility": false,
+    "authoritative_state": "WITHDRAWN",
+    "authoritative_state_version": "R2",
+    "authority_consumed_after": false,
+    "authority_consumed_before": false,
+    "authority_id": "AUTH_F15-CURRENT-BLOCKED",
+    "authority_valid": true,
+    "cached_admissibility": null,
+    "cached_state": null,
+    "cached_state_version": null,
+    "consequence_after": 1,
+    "consequence_before": 1,
+    "consequence_delta": 0,
+    "presenter_identity": "AGENT_F15",
+    "reason": "RESOLVED_STATE_NOT_ADMISSIBLE",
+    "resolution_status": "CURRENT_CONSISTENT_INADMISSIBLE",
+    "resolver_a_admissibility": false,
+    "resolver_a_availability": true,
+    "resolver_a_state": "WITHDRAWN",
+    "resolver_a_state_version": "R2",
+    "resolver_b_admissibility": false,
+    "resolver_b_availability": true,
+    "resolver_b_state": "WITHDRAWN",
+    "resolver_b_state_version": "R2",
+    "tool_identity": "TOOL_F15",
+    "verdict": "REFUSE"
+  },
+  "examination": "EASA-F15",
+  "stage": "F15-S5-NEGATIVE"
+}
