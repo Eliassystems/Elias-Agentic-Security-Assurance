@@ -1,0 +1,20 @@
+﻿Traceback (most recent call last):
+  File "<LOCAL_REPOSITORY>\EVIDENCE\PERFORMANCE\ELIAS_X1M_PERFORMANCE_EXAMINATION_V0.1_20260925\REPRODUCTION\persisted_v3_performance_reexecution.py", line 607, in <module>
+    completed = subprocess.run(
+        [
+    ...<7 lines>...
+        check=True,
+    )
+  File "<LOCAL_PYTHON_3.14>\Lib\subprocess.py", line 557, in run
+    stdout, stderr = process.communicate(input, timeout=timeout)
+                     ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<LOCAL_PYTHON_3.14>\Lib\subprocess.py", line 1221, in communicate
+    stdout, stderr = self._communicate(input, endtime, timeout)
+                     ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<LOCAL_PYTHON_3.14>\Lib\subprocess.py", line 1662, in _communicate
+    self.stdout_thread.join(self._remaining_time(endtime))
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<LOCAL_PYTHON_3.14>\Lib\threading.py", line 1133, in join
+    self._os_thread_handle.join(timeout)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+KeyboardInterrupt

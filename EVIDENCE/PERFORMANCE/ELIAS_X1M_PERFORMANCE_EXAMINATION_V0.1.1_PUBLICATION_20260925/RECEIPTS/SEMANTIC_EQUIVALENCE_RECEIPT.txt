@@ -1,0 +1,42 @@
+﻿ELIAS SHADOW V3 — SEQUENTIAL FIELD EQUIVALENCE
+==============================================
+
+ATTEMPTS:
+100000
+
+GENERATED_PATH_CLASSES:
+NO_AUTHORITY
+INVALID_AUTHORITY
+ALREADY_CONSUMED
+IDENTITY_MISMATCH
+ACTION_MISMATCH
+TOOL_MISMATCH
+AUTHORIZED
+
+DECISION_FIELDS_COMPARED:
+21
+
+MISMATCHES:
+0
+
+OBSERVED_RESULT:
+EQUIVALENT=TRUE
+
+SCOPE:
+Deterministically generated sequential comparison population.
+
+LIMITATION:
+This result does not by itself establish exhaustive semantic
+equivalence for all possible inputs, runtime states, implementations,
+environments, or concurrency schedules.
+
+SOURCE_MODIFIED:
+NO
+
+FROZEN_IMPLEMENTATION:
+UNCHANGED
+
+SHADOW_V3_STATUS:
+EXPERIMENTAL
+
+==============================================

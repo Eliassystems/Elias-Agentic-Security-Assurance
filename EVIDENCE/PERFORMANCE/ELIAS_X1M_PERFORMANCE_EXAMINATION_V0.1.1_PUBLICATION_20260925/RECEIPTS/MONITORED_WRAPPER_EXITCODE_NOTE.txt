@@ -1,0 +1,81 @@
+﻿ELIAS X1M PERFORMANCE EXAMINATION
+POWERSHELL MONITORED-WRAPPER EXIT-CODE NOTE
+===========================================
+
+RECORDED_AT:
+2026-09-25T00:39:32.0654306+01:00
+
+OBSERVATION:
+
+The monitored full persisted Python harness completed its internal
+performance examination and produced:
+
+- ten fresh-process ABBA results;
+- seven-path performance results;
+- PERFORMANCE_REEXECUTION=PASS;
+- ALL SEVEN PATHS V3 FASTER=True;
+- empty captured stderr.
+
+The baseline source, persisted Shadow V3 source, and persisted
+performance harness remained hash-identical before and after execution.
+
+However, the surrounding interactive PowerShell monitoring wrapper
+returned a null/blank Process.ExitCode value.
+
+Because the wrapper predicate required:
+
+    ExitCode -eq 0
+
+the wrapper-level variable:
+
+    OVERALL PERFORMANCE PASS
+
+evaluated False.
+
+This wrapper-level False is preserved and is NOT rewritten as a PASS.
+
+It is not used as the performance finding.
+
+The canonical persisted Python result files were subsequently
+independently read from disk and recalculated.
+
+INDEPENDENT DISK VERIFICATION:
+
+ABBA_ROWS=10
+ABBA_ALL_V3_FASTER=True
+
+ABBA_CURRENT_AGGREGATE_MEAN_US=7.128077
+ABBA_V3_AGGREGATE_MEAN_US=1.719096
+ABBA_RATIO_OF_AGGREGATE_MEANS=4.146409
+ABBA_AGGREGATE_REDUCTION_PERCENT=75.883
+
+SEVEN_PATH_ROWS=7
+SEVEN_PATH_ALL_V3_FASTER=True
+
+CORE_REEXECUTION_VERIFIED=True
+PERFORMANCE_SUMMARY_VERIFIED=True
+PERFORMANCE_RECEIPT_VERIFIED=True
+
+MONITORED_STDOUT:
+FULL_PERSISTED_RUN_20260925-003551.stdout.txt
+
+MONITORED_STDERR:
+FULL_PERSISTED_RUN_20260925-003551.stderr.txt
+
+MONITORED_STDERR_EMPTY=True
+
+BASELINE_SHA256=85ac55b617aacd714252a995558fed74d6b6e330dd4055d7d2b9f29ae59971de
+V3_SHA256=8c2f054fd4d2a9b9ec3684bdd73817d9e7a5c5e076d039aebb7928edae5f696f
+HARNESS_SHA256=cea268cd8a4468cec2ab6b59493035f82ea23b324f5cd414fb0c929c1e569ce6
+
+EVIDENCE TREATMENT:
+
+The wrapper exit-code anomaly remains part of the examination history.
+
+No retrospective repair has been applied.
+
+Performance standing is based on the persisted harness outputs,
+canonical result artifacts, source hashes, and independent disk
+recalculation.
+
+===========================================

@@ -1,0 +1,45 @@
+﻿ELIAS X1M — SEVEN-PATH PERFORMANCE MATRIX
+=========================================
+
+PATH                     CURRENT_US    V3_US    RATIO     REDUCTION
+NO_AUTHORITY                 6.485     1.276    5.080x       80.3%
+INVALID_AUTHORITY            7.151     1.778    4.021x       75.1%
+ALREADY_CONSUMED             7.440     2.015    3.693x       72.9%
+IDENTITY_MISMATCH            7.446     2.062    3.611x       72.3%
+ACTION_MISMATCH              7.509     2.048    3.666x       72.7%
+TOOL_MISMATCH                7.663     2.052    3.734x       73.2%
+AUTHORIZED                   7.105     1.790    3.970x       74.8%
+
+MEAN ACROSS SEVEN PATH MEANS:
+
+CURRENT:
+7.257 microseconds
+
+V3:
+1.860 microseconds
+
+RATIO OF SEVEN-PATH MEANS:
+3.901x
+
+REDUCTION FROM SEVEN-PATH MEANS:
+74.4%
+
+SAMPLES PER PATH PER REPEAT:
+100000
+
+REPEATS:
+5
+
+AUTHORITY SETUP:
+OUTSIDE TIMED REGION
+
+SOURCE MODIFIED:
+NO
+
+FROZEN IMPLEMENTATION:
+UNCHANGED
+
+SHADOW V3 STATUS:
+EXPERIMENTAL
+
+=========================================

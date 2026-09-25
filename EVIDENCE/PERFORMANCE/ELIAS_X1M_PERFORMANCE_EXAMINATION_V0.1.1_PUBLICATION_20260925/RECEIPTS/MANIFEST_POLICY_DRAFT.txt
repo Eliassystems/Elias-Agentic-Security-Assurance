@@ -1,0 +1,17 @@
+﻿SHA-256 MANIFEST POLICY
+=======================
+
+SHA256SUMS.txt hashes every package file present at manifest-generation
+time except SHA256SUMS.txt itself.
+
+This avoids recursive self-hashing.
+
+After any package content changes, SHA256SUMS.txt is stale and must be
+regenerated.
+
+The manifest produced at this stage is a DRAFT package manifest.
+
+A final release manifest must be regenerated only after the persisted
+V3 artifact has been rerun and the release gate has changed from HOLD.
+
+=======================

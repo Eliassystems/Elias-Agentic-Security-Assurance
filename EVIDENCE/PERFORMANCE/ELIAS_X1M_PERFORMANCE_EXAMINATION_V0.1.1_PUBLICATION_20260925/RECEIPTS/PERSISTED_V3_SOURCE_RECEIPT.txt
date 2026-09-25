@@ -1,0 +1,25 @@
+﻿ELIAS SHADOW V3 — PERSISTED SOURCE RECEIPT
+==========================================
+
+PERSISTED_AT:
+2026-09-25T00:26:35.3867551+01:00
+
+SOURCE:
+REPRODUCTION\shadow_v3_gate.py
+
+SHA256:
+8c2f054fd4d2a9b9ec3684bdd73817d9e7a5c5e076d039aebb7928edae5f696f
+
+BASELINE_SOURCE:
+03_controls\easa_f16_x1m_execution.py
+
+BASELINE_SHA256:
+85ac55b617aacd714252a995558fed74d6b6e330dd4055d7d2b9f29ae59971de
+
+BASELINE_MODIFIED:
+NO
+
+STATUS:
+EXPERIMENTAL — RE-EXECUTION IN PROGRESS
+
+==========================================

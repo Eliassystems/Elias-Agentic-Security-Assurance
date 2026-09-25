@@ -1,0 +1,16 @@
+﻿# Final SHA-256 Manifest Policy
+
+SHA256SUMS.txt contains the SHA-256 identity of every regular file in this evidence package except:
+
+- SHA256SUMS.txt
+- SHA256SUMS.sha256
+
+The manifest cannot hash itself without recursion.
+
+SHA256SUMS.sha256 is the sidecar SHA-256 identity of SHA256SUMS.txt.
+
+Any post-freeze modification to a manifested file invalidates the manifest and requires a new evidence version rather than silent repair.
+
+The manifest is the content-freeze boundary for this package.
+
+Evidence stops where the evidence stops.

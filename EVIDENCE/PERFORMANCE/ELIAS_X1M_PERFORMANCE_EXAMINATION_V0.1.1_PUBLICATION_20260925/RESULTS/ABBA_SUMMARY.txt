@@ -1,0 +1,49 @@
+﻿ELIAS X1M — TEN-PROCESS ABBA BATCH SUMMARY
+==========================================
+
+PROTOCOL:
+CURRENT -> V3 -> V3 -> CURRENT
+
+FRESH_PROCESSES:
+10
+
+SAMPLES_PER_BATCH:
+100000
+
+AUTHORITY_CONSTRUCTION:
+OUTSIDE TIMED REGION
+
+AGGREGATE CURRENT MEAN:
+7.1762 microseconds
+
+AGGREGATE V3 MEAN:
+1.7300 microseconds
+
+RATIO OF AGGREGATE MEANS:
+4.148x
+
+AGGREGATE LATENCY REDUCTION:
+75.9%
+
+MEAN OF PROCESS-LEVEL RATIOS:
+4.158x
+
+MEDIAN PROCESS-LEVEL RATIO:
+4.159x
+
+PROCESS-LEVEL RATIO RANGE:
+3.587x to 4.714x
+
+PROCESS-LEVEL REDUCTION RANGE:
+72.1% to 78.8%
+
+INTERPRETATION:
+The experimental V3 implementation repeatedly exhibited materially
+lower measured latency than the frozen baseline under the bounded
+ABBA batch protocol.
+
+LIMITATION:
+Absolute microsecond values are protocol-, machine-, runtime-, and
+environment-specific.
+
+==========================================

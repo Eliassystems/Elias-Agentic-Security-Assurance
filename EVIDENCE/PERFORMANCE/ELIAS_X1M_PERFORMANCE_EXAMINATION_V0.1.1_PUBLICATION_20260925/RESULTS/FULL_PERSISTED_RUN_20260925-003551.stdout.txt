@@ -1,0 +1,44 @@
+
+ELIAS PERSISTED V3 — PERFORMANCE RE-EXECUTION
+============================================================================================
+
+BASELINE SHA-256 : 85ac55b617aacd714252a995558fed74d6b6e330dd4055d7d2b9f29ae59971de
+V3 SHA-256       : 8c2f054fd4d2a9b9ec3684bdd73817d9e7a5c5e076d039aebb7928edae5f696f
+HARNESS SHA-256  : cea268cd8a4468cec2ab6b59493035f82ea23b324f5cd414fb0c929c1e569ce6
+
+TEN FRESH-PROCESS ABBA RESULTS
+--------------------------------------------------------------------------------------------
+PROCESS  1  CURRENT=7.338 us  V3=1.680 us  RATIO=4.368x  REDUCTION=77.1%
+PROCESS  2  CURRENT=7.004 us  V3=1.797 us  RATIO=3.898x  REDUCTION=74.3%
+PROCESS  3  CURRENT=6.970 us  V3=1.651 us  RATIO=4.222x  REDUCTION=76.3%
+PROCESS  4  CURRENT=7.415 us  V3=1.725 us  RATIO=4.299x  REDUCTION=76.7%
+PROCESS  5  CURRENT=7.226 us  V3=1.756 us  RATIO=4.114x  REDUCTION=75.7%
+PROCESS  6  CURRENT=7.177 us  V3=1.796 us  RATIO=3.997x  REDUCTION=75.0%
+PROCESS  7  CURRENT=7.058 us  V3=1.681 us  RATIO=4.199x  REDUCTION=76.2%
+PROCESS  8  CURRENT=6.920 us  V3=1.673 us  RATIO=4.137x  REDUCTION=75.8%
+PROCESS  9  CURRENT=7.059 us  V3=1.708 us  RATIO=4.132x  REDUCTION=75.8%
+PROCESS 10  CURRENT=7.113 us  V3=1.725 us  RATIO=4.124x  REDUCTION=75.8%
+--------------------------------------------------------------------------------------------
+AGGREGATE CURRENT MEAN : 7.128 us
+AGGREGATE V3 MEAN      : 1.719 us
+AGGREGATE RATIO        : 4.146x
+AGGREGATE REDUCTION    : 75.9%
+
+SEVEN-PATH PERSISTED V3 MATRIX
+--------------------------------------------------------------------------------------------
+PATH                     CURRENT_US        V3_US       RATIO     REDUCTION
+NO_AUTHORITY                  6.596        1.278      5.159x         80.6%
+INVALID_AUTHORITY             7.037        1.773      3.968x         74.8%
+ALREADY_CONSUMED              7.318        1.984      3.688x         72.9%
+IDENTITY_MISMATCH             7.224        2.006      3.601x         72.2%
+ACTION_MISMATCH               7.404        2.036      3.636x         72.5%
+TOOL_MISMATCH                 7.420        2.090      3.550x         71.8%
+AUTHORIZED                    7.060        1.755      4.021x         75.1%
+--------------------------------------------------------------------------------------------
+ALL SEVEN PATHS V3 FASTER : True
+
+PERFORMANCE_REEXECUTION=PASS
+BASELINE_MODIFIED=NO
+RELEASE_GATE=HOLD
+NEXT=FINAL_PACKAGE_RECONCILIATION_AND_FREEZE
+============================================================================================

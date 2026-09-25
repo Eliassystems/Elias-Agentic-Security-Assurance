@@ -1,0 +1,44 @@
+﻿ELIAS SHADOW V3 — SINGLE-USE AUTHORITY CONTENTION
+=================================================
+
+THREADS  ROUNDS  FAILURES  EXPECTED_PERMITS  OBSERVED_PERMITS
+2        100     0         100               100
+4        100     0         100               100
+8        100     0         100               100
+16       100     0         100               100
+32       100     0         100               100
+64       100     0         100               100
+
+TOTAL_ROUNDS:
+600
+
+TOTAL_FAILURES:
+0
+
+OBSERVED_CONTENTION_PROPERTY:
+PASS
+
+REQUIRED PER ROUND:
+- exactly one PERMIT
+- all other contenders REFUSE
+- total consequence delta = 1
+- final tool consequence counter = 1
+
+FIELDS_PRESERVED:
+21
+
+SOURCE_MODIFIED:
+NO
+
+FROZEN_IMPLEMENTATION:
+UNCHANGED
+
+SHADOW_V3_STATUS:
+EXPERIMENTAL
+
+LIMITATION:
+This bounded contention examination does not prove correctness under
+every possible scheduler, operating system, interpreter, workload,
+thread interleaving, or deployment condition.
+
+=================================================
