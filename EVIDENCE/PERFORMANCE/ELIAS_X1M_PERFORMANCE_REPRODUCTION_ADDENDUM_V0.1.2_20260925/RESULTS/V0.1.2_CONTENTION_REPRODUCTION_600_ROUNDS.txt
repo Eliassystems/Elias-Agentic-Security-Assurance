@@ -1,0 +1,35 @@
+﻿ELIAS X1M v0.1.2 - V3 SINGLE-USE CONTENTION REPRODUCTION
+======================================================================================
+FROZEN_COMMIT           : 627c70e11fdc39f3ce7ca2ca144c510ed7aa46d0
+BASELINE_SHA256         : 85ac55b617aacd714252a995558fed74d6b6e330dd4055d7d2b9f29ae59971de
+PERSISTED_V3_SHA256     : 8c2f054fd4d2a9b9ec3684bdd73817d9e7a5c5e076d039aebb7928edae5f696f
+
+BASELINE_HASH_MATCH      : TRUE
+V3_HASH_MATCH            : TRUE
+
+GATE       THREADS  ROUNDS  FAILURES  EXPECTED_PERMITS  OBSERVED_PERMITS
+--------------------------------------------------------------------------------------
+SHADOW_V3        2     100         0               100               100
+SHADOW_V3        4     100         0               100               100
+SHADOW_V3        8     100         0               100               100
+SHADOW_V3       16     100         0               100               100
+SHADOW_V3       32     100         0               100               100
+SHADOW_V3       64     100         0               100               100
+
+======================================================================================
+THREAD_COUNTS           : 2,4,8,16,32,64
+ROUNDS_PER_COUNT        : 100
+TOTAL_ROUNDS            : 600
+TOTAL_FAILURES          : 0
+EXPECTED_PERMITS        : 600
+OBSERVED_PERMITS        : 600
+PROPERTY                : PASS
+REQUIRED_PER_ROUND      : EXACTLY_ONE_PERMIT
+OTHER_CONTENDERS        : REFUSE
+TOTAL_CONSEQUENCE_DELTA : 1
+FINAL_TOOL_COUNTER      : 1
+FIELDS_PRESERVED        : 21
+SOURCE_MODIFIED         : NO
+ARTIFACT_STATUS         : FORWARD_ONLY_REPRODUCTION
+======================================================================================
+V0.1.2_CONTENTION_REPRODUCTION=PASS

@@ -1,0 +1,22 @@
+﻿ELIAS X1M v0.1.2  -  V3 SEMANTIC EQUIVALENCE REPRODUCTION
+==============================================================================
+FROZEN_COMMIT           : 627c70e11fdc39f3ce7ca2ca144c510ed7aa46d0
+BASELINE_SHA256         : 85ac55b617aacd714252a995558fed74d6b6e330dd4055d7d2b9f29ae59971de
+PERSISTED_V3_SHA256     : 8c2f054fd4d2a9b9ec3684bdd73817d9e7a5c5e076d039aebb7928edae5f696f
+
+BASELINE_HASH_MATCH      : TRUE
+V3_HASH_MATCH            : TRUE
+
+
+==============================================================================
+ATTEMPTS_REQUESTED      : 100,000
+FIELDS_COMPARED         : 21
+PATH_CLASSES            : 7
+PERMIT                  : 14,285
+REFUSE                  : 85,715
+MISMATCHES              : 0
+EQUIVALENT              : True
+SOURCE_MODIFIED         : NO
+ARTIFACT_STATUS         : FORWARD_ONLY_REPRODUCTION
+==============================================================================
+V0.1.2_SEMANTIC_REPRODUCTION=PASS
